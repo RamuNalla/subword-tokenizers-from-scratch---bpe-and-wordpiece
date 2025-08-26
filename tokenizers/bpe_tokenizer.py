@@ -29,5 +29,12 @@ class BPETokenizer(BaseTokenizer):
 
     def _get_pairs(self, word_splits: Dict[str, List[str]]) -> Counter:             # Gets all adjacent pairs from word splits
 
+        pairs = Counter()
+
+        for words, splits in word_splits.items():
+            for i in range(len(splits)-1):
+                pairs[(splits[i], splits[i+1])] += self.word_freqs[word]
+        
+        return pairs
 
     
