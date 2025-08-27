@@ -31,10 +31,30 @@ class BPETokenizer(BaseTokenizer):
 
         pairs = Counter()
 
-        for words, splits in word_splits.items():
+        for word, splits in word_splits.items():
             for i in range(len(splits)-1):
                 pairs[(splits[i], splits[i+1])] += self.word_freqs[word]
         
         return pairs
+
+        def _merge_pair(self, pair: Tuple[str, str], word_splits: Dict[str, List[str]]) -> Dict[str, List[str]]:
+
+            new_word_splits = {}
+            new_token = pair[0] + pair[1]
+        
+            for word, splits in word_splits.items():
+                new_splits = []
+                i = 0
+                while i < len(splits):
+                    if i < len(splits) - 1 and splits[i] == pair[0] and splits[i + 1] == pair[1]:
+                    # Merge the pair
+                        new_splits.append(new_token)
+                        i += 2
+                    else:
+                        new_splits.append(splits[i])
+                        i += 1
+                new_word_splits[word] = new_splits
+        
+            return new_word_splits
 
     
