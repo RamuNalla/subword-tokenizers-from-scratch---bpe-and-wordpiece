@@ -37,24 +37,27 @@ class BPETokenizer(BaseTokenizer):
         
         return pairs
 
-        def _merge_pair(self, pair: Tuple[str, str], word_splits: Dict[str, List[str]]) -> Dict[str, List[str]]:
+    def _merge_pair(self, pair: Tuple[str, str], word_splits: Dict[str, List[str]]) -> Dict[str, List[str]]:        # Merge a specific pair in all word splits
 
-            new_word_splits = {}
-            new_token = pair[0] + pair[1]
+        new_word_splits = {}
+        new_token = pair[0] + pair[1]
+
+        for word, splits in word_splits.items():
+            new_splits = []
+            i = 0
+            while i < len(splits):
+                if i < len(splits)-1 and splits[i] == pair[0] and splits[i+1] == pair[1]:
+                    new_splits.append(new_token)
+                    i += 2
+                else:
+                    new_splits.append(splits[i])
+            new_splits[word] = new_splits
         
-            for word, splits in word_splits.items():
-                new_splits = []
-                i = 0
-                while i < len(splits):
-                    if i < len(splits) - 1 and splits[i] == pair[0] and splits[i + 1] == pair[1]:
-                    # Merge the pair
-                        new_splits.append(new_token)
-                        i += 2
-                    else:
-                        new_splits.append(splits[i])
-                        i += 1
-                new_word_splits[word] = new_splits
-        
-            return new_word_splits
+        return new_word_splits
+
+    
+
+
+
 
     
