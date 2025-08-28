@@ -55,7 +55,66 @@ class BPETokenizer(BaseTokenizer):
         
         return new_word_splits
 
-    
+
+    def train(self, corpus: List[str]) -> None:         # Train BPE on corpus
+
+        word_freqs = self._get_word_frequencies(corpus)
+        self.word_freqs = word_freqs
+
+        char_freqs = self._get_character_level_vocab(word_freqs)        # Initialize with character level vocabulary
+
+        next_id = len(self.vocab)
+
+        for char, freq in char_freqs.items():
+            if freq >= self.min_frequency:
+                self.vocab[char] = next_id
+                self.id_to_token[next_id] = char
+                self.token_freqs[char] = freq
+                next_id += 1
+        
+        word_splits = {}                            # Initialize word splits (each word split into characters + word end tokens)
+        for word in word_freqs:
+            word_splits[word] = list(word) + [self.word_end_token]
+        
+        num_merges = self.vocab_size - len(self.vocab)          # BPE merges
+
+        for merge_num in range(num_merges):
+
+            pairs = self._get_pairs(word_splits)
+
+            if not pairs:
+                print(f"No more pairs to merge. Stopping ar {len(self.vocab)} tokens")
+            
+            best_pair = pairs.most_common(1)[0][0]
+            best_freq = pairs[best_pair]
+
+            if best_freq < self.min_frequency:
+                print(f"Best pair frequency ({best_freq}) below theshold. Stopping")
+                break
+            
+            new_token = best_pair[0] + best_pair[1]     # create new token by merging pait
+
+            self.vocab[new_token] = next_id
+            self.id_to_token[next_id] = new_token
+            self.token_freqs[new_token] = best_freq
+            next_id += 1
+
+            self.merges[best_pair] = new_token
+            self.merge_order.append(best_pair)
+
+            word_splits = self._merge_pair(best_pair, word_splits)
+
+            if (merge_num + 1) % 100 == 0:
+                print(f"Completed {merge_num + 1} merges. Vocab size: {len(self.vocab)}")
+        
+        self.trained = True
+        print(f"Training complete! Final vocabulary size: {len(self.vocab)}")
+
+        
+
+
+
+
 
 
 
