@@ -110,7 +110,24 @@ class BPETokenizer(BaseTokenizer):
         self.trained = True
         print(f"Training complete! Final vocabulary size: {len(self.vocab)}")
 
+    
+    def _apply_bpe(self, word: str) -> List[str]:       # Apply learned BPE to a word
+
+        tokens = list(word) + [self.word_end_token]
+
+        for pair in self.merge_order:
+            i=0
+            while i < len(tokens) - 1:
+                if tokens[i] == pair[0] and tokens[i+1] == pair[1]:
+                    merged_token = self.merges[pair]
+                    tokens = tokens[:i] + [merged_token] + tokens[i+2:]
+                else:
+                    i += 1
         
+        return tokens
+
+    
+
 
 
 
