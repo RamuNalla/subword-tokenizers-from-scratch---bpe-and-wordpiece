@@ -198,7 +198,30 @@ class BPETokenizer(BaseTokenizer):
                 pickle.dump(data, f)
 
 
+    def load(self, filepath: str) -> None:          # load BPE tokenizer from file
 
+        if filepath.endswith('.json'):
+            with open(filepath, 'r', encoding = 'utf-8') as f:
+                data = json.load(f)
+        else:
+            with open(filepath, 'rb') as f:
+                data = pickle.load(f) 
+
+        self.vocab_size = data['vocab_size']
+        self.min_frequency = data['min_frequency']
+        self.word_end_token = data['word_end_token']
+        self.vocab = data['vocab']
+        self.id_to_token = {int(k): v for k, v in data['id_to_token'].items()}
+        self.token_freqs = Counter(data['token_freqs'])
+        self.word_freqs = data.get('word_freqs', {})
+
+        self.merges = {}                            # Deserialize merge rules
+        for key, value in data['merges'].items():
+            parts = key.split('___')
+            self.merges[(parts[0], parts[1])] = value
+        
+        self.merge_order = [(pair[0], pair[1]) for pair in data['merge_order']]
+        self.trained = data['trained']
 
 
 
