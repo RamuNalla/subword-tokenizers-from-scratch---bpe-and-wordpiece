@@ -127,6 +127,52 @@ class BPETokenizer(BaseTokenizer):
         return tokens
 
     
+    def encode(self, text: str) -> List[int]:       # Encodes text into tokenids using BPE
+
+        if not self.trained:
+            raise ValueError("Tokenizer must be trained before encoding")
+
+        preprocessed = self._preprocess_text(text)
+        words = preprocessed.split()
+
+        token_ids = []
+
+        for word in words:
+            subword_tokens = self._apply_bpe(word)
+
+            for token in subword_tokens:
+                if token in self.vocab:
+                    token_ids.append(self.vocab[token])
+                else:
+                    token_ids.append(self.vocab[self.UNK])
+        
+        return token_ids
+    
+
+    def _postprocess_tokens(self, tokens: List[str]) -> str:        # Postprocess BPE tokens back to readable text
+
+        cleaned_tokens = [t for t in tokens if t not in {self.PAD, self.BOS, self.EOS, self.UNK}]
+
+        text_parts = []
+        current_word = ""
+
+        for token in cleaned_tokens:
+            if token.endswith(self.word_end_token):
+                current_word += token[:-len(self.word_end_token)]
+
+                text_parts.append(current_word)
+                current_word = ""
+            else:
+                current_word += token
+        
+        if current_word:
+            text_parts.append(current_word)
+        
+        return ' '.join(text_parts)
+
+
+
+
 
 
 
