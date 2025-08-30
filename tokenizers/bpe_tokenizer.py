@@ -171,6 +171,32 @@ class BPETokenizer(BaseTokenizer):
         return ' '.join(text_parts)
 
 
+    def get_merge_rules(self) -> List[Tuple[str, str]]:
+        return self.merge_order.copy()
+    
+    def save(self, filepath: str) -> None:                  # Save BPE tokenizer to a file
+
+        data = {
+            'vocab_size': self.vocab_size,
+            'min_frequency': self.min_frequency,
+            'word_end_token': self.word_end_token,
+            'vocab': self.vocab,
+            'id_to_token': self.id_to_token,
+            'token_freqs': dict(self.token_freqs),
+            'word_freqs': dict(self.token_freqs) if hasattr(self, 'word_freqs') else {},
+            'merges': {f"{k[0]}___{k[1]}": v for k, v in self.merges.items()},              # Serialize tuple keys
+            'merge_order': [[pair[0], pair[1]] for pair in self.merge_order],               # Serialize tuples
+            'trained': self.trained,
+            'tokenizer_type': 'BPETokenizer'
+        }
+
+        if filepath.endswith('.json'):
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        else:
+            with open(filepath, 'wb') as f:
+                pickle.dump(data, f)
+
 
 
 
