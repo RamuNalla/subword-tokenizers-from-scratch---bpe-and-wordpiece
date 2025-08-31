@@ -13,4 +13,17 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
 
         self.word_prefix = word_prefix
         self.UNK = unk_token
+        self._update_special_tokens()
+
+        self.subword_counts = Counter()
+        self.pair_counts = Counter()
+
+
+    def _update_special_tokens(self):
+        self.vocab.clear()
+        self.id_to_token.clear()
         
+        special_tokens = [self.PAD, self.UNK, self.BOS, self.EOS]
+        for i, token in enumerate(special_tokens):
+            self.vocab[token] = i
+            self.id_to_token[i] = token
