@@ -2,7 +2,7 @@ import json
 import pickle
 import math
 import regex as re
-from typing import List, Tuple, Dict, set
+from typing import List, Tuple, Dict, Set
 from collections import Counter, defaultdict
 from .base_tokenizer import BaseTokenizer
 
@@ -27,3 +27,50 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
         for i, token in enumerate(special_tokens):
             self.vocab[token] = i
             self.id_to_token[i] = token
+    
+
+    def _get_initial_subwords(self, word_freqs: Dict[str, int]) -> Dict[str, int]:      # get initial subword vocabulary from character level
+
+        subword_freqs = Counter()
+        
+        for word, freq in word_freqs.items():
+            if word:
+                subword_freqs[word[0]] += freq
+                
+                for char in word[1:]:
+                    prefixed_char = self.word_prefix + char
+                    subword_freqs[prefixed_char] += freq
+        
+        return dict(subword_freqs)
+    
+    
+    def _split_word_into_subwords(self, word: str, vocab_set: Set[str]) -> List[str]:       # split a word into subwords
+
+        if not word:
+            return []
+        
+        subwords = []
+        start = 0
+        
+        while start < len(word):
+            end = len(word)
+            found = False
+            
+            while start < end:                   # find the longest subword starting at 'start'
+                subword = word[start:end]
+                
+                if start > 0:                   # Add prefix if not at word beginning
+                    subword = self.word_prefix + subword
+                
+                if subword in vocab_set:
+                    subwords.append(subword)
+                    start = end
+                    found = True
+                    break
+                
+                end -= 1
+            
+            if not found:
+                return [self.UNK]               # Cannot split further, return UNK
+        
+        return subwords
