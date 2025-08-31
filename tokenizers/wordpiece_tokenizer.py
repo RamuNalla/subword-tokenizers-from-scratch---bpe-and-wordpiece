@@ -61,7 +61,6 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
                 
                 if start > 0:                   # Add prefix if not at word beginning
                     subword = self.word_prefix + subword
-                
                 if subword in vocab_set:
                     subwords.append(subword)
                     start = end
@@ -74,3 +73,25 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
                 return [self.UNK]               # Cannot split further, return UNK
         
         return subwords
+    
+
+    def _get_all_subword_pairs(self, word_freqs: Dict[str, int], vocab_set: Set[str]) -> Counter:       # get all adjacent subword pairs and their frequencies.
+
+        pair_counts = Counter()
+        
+        for word, freq in word_freqs.items():
+            subwords = self._split_word_into_subwords(word, vocab_set)
+            
+            for i in range(len(subwords) - 1):
+                pair = (subwords[i], subwords[i + 1])
+                pair_counts[pair] += freq
+        
+        return pair_counts
+    
+
+    def _calculate_pair_score(self, pair: Tuple[str, str], pair_count: int, left_count: int, right_count: int) -> float:
+
+        if left_count == 0 or right_count == 0:
+            return float('-inf')
+        
+        return math.log(pair_count / (left_count * right_count))        # WordPiece score: log(pair_count / (left_count * right_count)), higher score means better merges
