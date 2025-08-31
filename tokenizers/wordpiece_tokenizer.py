@@ -95,3 +95,75 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
             return float('-inf')
         
         return math.log(pair_count / (left_count * right_count))        # WordPiece score: log(pair_count / (left_count * right_count)), higher score means better merges
+    
+
+    def train(self, corpus: List[str]) -> None:             # train word piece tokenizer on the corpus
+       
+        word_freqs = self._get_word_frequencies(corpus)     # get word frequencies
+        self.word_freqs = word_freqs
+        
+        subword_freqs = self._get_initial_subwords(word_freqs)      # initialize with character-level subwords
+        
+        next_id = len(self.vocab)                                   # add initial subwords to vocabulary
+        for subword, freq in subword_freqs.items():
+            if freq >= self.min_frequency:
+                self.vocab[subword] = next_id
+                self.id_to_token[next_id] = subword
+                self.token_freqs[subword] = freq
+                self.subword_counts[subword] = freq
+                next_id += 1
+        
+        vocab_set = set(self.vocab.keys())
+        
+        num_merges = self.vocab_size - len(self.vocab)              # Perform WordPiece merges
+        
+        for merge_num in range(num_merges):
+            pair_counts = self._get_all_subword_pairs(word_freqs, vocab_set)            # Get all pairs and their counts
+            
+            if not pair_counts:
+                print(f"No more pairs found. Stopping at {len(self.vocab)} tokens.")
+                break
+            
+            best_pair = None                
+            best_score = float('-inf')                          # Calculate scores for all pairs
+            
+            for pair, pair_count in pair_counts.items():
+                if pair_count < self.min_frequency:
+                    continue
+                
+                left_token, right_token = pair
+                left_count = self.subword_counts.get(left_token, 0)
+                right_count = self.subword_counts.get(right_token, 0)
+                
+                score = self._calculate_pair_score(pair, pair_count, left_count, right_count)
+                
+                if score > best_score:
+                    best_score = score
+                    best_pair = pair
+            
+            if best_pair is None:
+                print(f"No valid pairs found. Stopping at {len(self.vocab)} tokens.")
+                break
+            
+            left_token, right_token = best_pair                 # Create new merged token
+            if right_token.startswith(self.word_prefix):
+                new_token = left_token + right_token[len(self.word_prefix):]        # Remove prefix when merging
+            else:
+                new_token = left_token + right_token
+            
+            self.vocab[new_token] = next_id                     # Add new token to vocabulary
+            self.id_to_token[next_id] = new_token
+            
+            merged_count = pair_counts[best_pair]               # Update counts
+            self.token_freqs[new_token] = merged_count
+            self.subword_counts[new_token] = merged_count
+            
+            vocab_set.add(new_token)                            # Update vocabulary set
+            next_id += 1
+            
+            if (merge_num + 1) % 100 == 0:
+                print(f"Completed {merge_num + 1} merges. Vocab size: {len(self.vocab)}")
+                print(f"Best pair: {best_pair} -> {new_token} (score: {best_score:.4f})")
+        
+        self.trained = True
+        print(f"Training complete! Final vocabulary size: {len(self.vocab)}")
