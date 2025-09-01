@@ -167,3 +167,48 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
         
         self.trained = True
         print(f"Training complete! Final vocabulary size: {len(self.vocab)}")
+
+
+    def encode(self, text: str) -> List[int]:               # encode text into token IDs with wordpiece
+
+        if not self.trained:
+            raise ValueError("Tokenizer must be trained before encoding")
+        
+        preprocessed = self._preprocess_text(text)
+        words = preprocessed.split()
+        
+        token_ids = []
+        vocab_set = set(self.vocab.keys())
+        
+        for word in words:
+            
+            subwords = self._split_word_into_subwords(word, vocab_set)      # split word into subwords
+            
+            for subword in subwords:                                        # convert to IDs
+                if subword in self.vocab:
+                    token_ids.append(self.vocab[subword])
+                else:
+                    token_ids.append(self.vocab[self.UNK])
+        
+        return token_ids
+    
+
+    def _postprocess_tokens(self, tokens: List[str]) -> str:        # postprocess wordpiece tokens back to readable text
+        
+        cleaned_tokens = [t for t in tokens if t not in {self.PAD, self.BOS, self.EOS, self.UNK}]   # remove special tokens
+        
+        words = []
+        current_word = ""
+        
+        for token in cleaned_tokens:
+            if token.startswith(self.word_prefix):
+                current_word += token[len(self.word_prefix):]           # continuation of current word
+            else:
+                if current_word:                                        # start of new word
+                    words.append(current_word)
+                current_word = token
+        
+        if current_word:
+            words.append(current_word)                                  # add the last word
+        
+        return ' '.join(words)
