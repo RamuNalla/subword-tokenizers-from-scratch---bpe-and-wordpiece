@@ -212,3 +212,58 @@ class WordPieceTokenizer(BaseTokenizer):            # Implementation with likeli
             words.append(current_word)                                  # add the last word
         
         return ' '.join(words)
+
+
+    def get_subword_vocab(self) -> Dict[str, int]:                      # get the subword vocab frequencies
+        return dict(self.subword_counts)
+    
+    
+    def analyze_word(self, word: str) -> List[str]:                     # analyze how a word split into subwords
+
+        if not self.trained:
+            raise ValueError("Tokenizer must be trained before analysis")
+        
+        vocab_set = set(self.vocab.keys())
+        return self._split_word_into_subwords(word.lower(), vocab_set)
+
+    def save(self, filepath: str) -> None:                              # save the wordpiece tokenizer to a file
+        
+        data = {
+            'vocab_size': self.vocab_size,
+            'min_frequency': self.min_frequency,
+            'word_prefix': self.word_prefix,
+            'vocab': self.vocab,
+            'id_to_token': self.id_to_token,
+            'token_freqs': dict(self.token_freqs),
+            'subword_counts': dict(self.subword_counts),
+            'word_freqs': dict(self.word_freqs) if hasattr(self, 'word_freqs') else {},
+            'trained': self.trained,
+            'tokenizer_type': 'WordPieceTokenizer'
+        }
+        
+        if filepath.endswith('.json'):
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        else:
+            with open(filepath, 'wb') as f:
+                pickle.dump(data, f)
+
+    
+    def load(self, filepath: str) -> None:                              # load the wordpiece tokenizer from a file
+        
+        if filepath.endswith('.json'):
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        else:
+            with open(filepath, 'rb') as f:
+                data = pickle.load(f)
+        
+        self.vocab_size = data['vocab_size']
+        self.min_frequency = data['min_frequency']
+        self.word_prefix = data['word_prefix']
+        self.vocab = data['vocab']
+        self.id_to_token = {int(k): v for k, v in data['id_to_token'].items()}
+        self.token_freqs = Counter(data['token_freqs'])
+        self.subword_counts = Counter(data['subword_counts'])
+        self.word_freqs = data.get('word_freqs', {})
+        self.trained = data['trained']
