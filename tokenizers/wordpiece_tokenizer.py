@@ -9,12 +9,10 @@ from .base_tokenizer import BaseTokenizer
 class WordPieceTokenizer(BaseTokenizer):            # Implementation with likelihood based merging
     
     def __init__(self, vocab_size: int = 1000, min_frequency: int = 2, word_prefix: str = "##", unk_token: str = "[UNK]"):
-        super.__init__(vocab_size, min_frequency)
-
+        super().__init__(vocab_size, min_frequency)
         self.word_prefix = word_prefix
         self.UNK = unk_token
         self._update_special_tokens()
-
         self.subword_counts = Counter()
         self.pair_counts = Counter()
 

@@ -51,7 +51,8 @@ class BPETokenizer(BaseTokenizer):
                     i += 2
                 else:
                     new_splits.append(splits[i])
-            new_splits[word] = new_splits
+                    i += 1
+            new_word_splits[word] = new_splits
         
         return new_word_splits
 
@@ -232,4 +233,4 @@ class BPETokenizer(BaseTokenizer):
 
 
 
-    
+

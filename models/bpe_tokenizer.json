@@ -1,0 +1,4224 @@
+{
+  "vocab_size": 1000,
+  "min_frequency": 2,
+  "word_end_token": "</w>",
+  "vocab": {
+    "<PAD>": 0,
+    "<UNK>": 1,
+    "<BOS>": 2,
+    "<EOS>": 3,
+    "t": 4,
+    "h": 5,
+    "e": 6,
+    "</w>": 7,
+    "q": 8,
+    "u": 9,
+    "i": 10,
+    "c": 11,
+    "k": 12,
+    "b": 13,
+    "r": 14,
+    "o": 15,
+    "w": 16,
+    "n": 17,
+    "f": 18,
+    "x": 19,
+    "j": 20,
+    "m": 21,
+    "p": 22,
+    "s": 23,
+    "v": 24,
+    "l": 25,
+    "a": 26,
+    "z": 27,
+    "y": 28,
+    "d": 29,
+    "g": 30,
+    ".": 31,
+    ",": 32,
+    "-": 33,
+    "s</w>": 34,
+    "e</w>": 35,
+    "in": 36,
+    "an": 37,
+    "d</w>": 38,
+    "er": 39,
+    "ing": 40,
+    "at": 41,
+    "ar": 42,
+    "ing</w>": 43,
+    "on": 44,
+    "en": 45,
+    "al": 46,
+    ",</w>": 47,
+    "th": 48,
+    ".</w>": 49,
+    "and</w>": 50,
+    "or": 51,
+    "t</w>": 52,
+    "ro": 53,
+    "ti": 54,
+    "a</w>": 55,
+    "el": 56,
+    "y</w>": 57,
+    "ch": 58,
+    "le": 59,
+    "on</w>": 60,
+    "ic": 61,
+    "st": 62,
+    "al</w>": 63,
+    "of": 64,
+    "pro": 65,
+    "to": 66,
+    "dat": 67,
+    "es</w>": 68,
+    "re": 69,
+    "si": 70,
+    "ce</w>": 71,
+    "ma": 72,
+    "the</w>": 73,
+    "co": 74,
+    "data</w>": 75,
+    "ter": 76,
+    "of</w>": 77,
+    "ed</w>": 78,
+    "to</w>": 79,
+    "mp": 80,
+    "for": 81,
+    "li": 82,
+    "in</w>": 83,
+    "ul": 84,
+    "ence</w>": 85,
+    "es": 86,
+    "ur": 87,
+    "lear": 88,
+    "learn": 89,
+    "con": 90,
+    "te": 91,
+    "ati": 92,
+    "is</w>": 93,
+    "ces": 94,
+    "ci": 95,
+    "learning</w>": 96,
+    "se": 97,
+    "ra": 98,
+    "ab": 99,
+    "ge</w>": 100,
+    "proces": 101,
+    "mo": 102,
+    "mach": 103,
+    "machin": 104,
+    "le</w>": 105,
+    "ts</w>": 106,
+    "de": 107,
+    "ang": 108,
+    "m</w>": 109,
+    "op": 110,
+    "su": 111,
+    "comp": 112,
+    "anal": 113,
+    "analy": 114,
+    "machine</w>": 115,
+    "mod": 116,
+    "are</w>": 117,
+    "as</w>": 118,
+    "it</w>": 119,
+    "for</w>": 120,
+    "sing</w>": 121,
+    "fic": 122,
+    "un": 123,
+    "ly</w>": 124,
+    "ation</w>": 125,
+    "ke</w>": 126,
+    "qu": 127,
+    "ver": 128,
+    "as": 129,
+    "atur": 130,
+    "lang": 131,
+    "langu": 132,
+    "langua": 133,
+    "language</w>": 134,
+    "processing</w>": 135,
+    "tic": 136,
+    "compu": 137,
+    "wi": 138,
+    "ac": 139,
+    "ons</w>": 140,
+    "en</w>": 141,
+    "ow": 142,
+    "ut</w>": 143,
+    "ex": 144,
+    "ers</w>": 145,
+    "model": 146,
+    "iz": 147,
+    "form": 148,
+    "like</w>": 149,
+    "ni": 150,
+    "ular": 151,
+    "is": 152,
+    "sci": 153,
+    "int": 154,
+    "an</w>": 155,
+    "pat": 156,
+    "patter": 157,
+    "pattern": 158,
+    "pl": 159,
+    "it": 160,
+    "p</w>": 161,
+    "ne": 162,
+    "wor": 163,
+    "der": 164,
+    "ent</w>": 165,
+    "ch</w>": 166,
+    "sy": 167,
+    "ol": 168,
+    "ste": 169,
+    "vel": 170,
+    "pre": 171,
+    "tr": 172,
+    "cr": 173,
+    "sis</w>": 174,
+    "cl": 175,
+    "de</w>": 176,
+    "ds</w>": 177,
+    "computer": 178,
+    "science</w>": 179,
+    "arti": 180,
+    "artific": 181,
+    "artifici": 182,
+    "artificial</w>": 183,
+    "intel": 184,
+    "intelli": 185,
+    "intellig": 186,
+    "intelligence</w>": 187,
+    "with": 188,
+    "be": 189,
+    "par": 190,
+    "ms</w>": 191,
+    "patterns</w>": 192,
+    "ks</w>": 193,
+    "ting</w>": 194,
+    "the": 195,
+    "hi": 196,
+    "ai": 197,
+    "syste": 198,
+    "ha": 199,
+    "ve</w>": 200,
+    "tran": 201,
+    "trans": 202,
+    "tion</w>": 203,
+    "ful": 204,
+    "ful</w>": 205,
+    "analysis</w>": 206,
+    "ec": 207,
+    "k</w>": 208,
+    "n</w>": 209,
+    "fo": 210,
+    "this</w>": 211,
+    "ular</w>": 212,
+    "natur": 213,
+    "natural</w>": 214,
+    "fi": 215,
+    "inter": 216,
+    "process</w>": 217,
+    "us": 218,
+    "under": 219,
+    "underst": 220,
+    "ding</w>": 221,
+    "ai</w>": 222,
+    "sear": 223,
+    "per": 224,
+    "systems</w>": 225,
+    "transform": 226,
+    "er</w>": 227,
+    "me": 228,
+    "di": 229,
+    "devel": 230,
+    "develop": 231,
+    "hel": 232,
+    "vi": 233,
+    "gni": 234,
+    "ies</w>": 235,
+    "tech": 236,
+    "ering</w>": 237,
+    "x</w>": 238,
+    "over": 239,
+    "do": 240,
+    "sting</w>": 241,
+    "sub": 242,
+    "fiel": 243,
+    "field</w>": 244,
+    "computer</w>": 245,
+    "conc": 246,
+    "with</w>": 247,
+    "tions</w>": 248,
+    "tw": 249,
+    "ow</w>": 250,
+    "prog": 251,
+    "progra": 252,
+    "analyz": 253,
+    "analyze</w>": 254,
+    "gor": 255,
+    "can</w>": 256,
+    "fro": 257,
+    "from</w>": 258,
+    "plic": 259,
+    "mm": 260,
+    "model</w>": 261,
+    "tok": 262,
+    "token": 263,
+    "sequ": 264,
+    "sequence</w>": 265,
+    "but</w>": 266,
+    "ap": 267,
+    "tim": 268,
+    "resear": 269,
+    "foc": 270,
+    "ted</w>": 271,
+    "ad": 272,
+    "has</w>": 273,
+    "du": 274,
+    "ten": 275,
+    "tec": 276,
+    "ure</w>": 277,
+    "vol": 278,
+    "models</w>": 279,
+    "developm": 280,
+    "development</w>": 281,
+    "cru": 282,
+    "cruci": 283,
+    "crucial</w>": 284,
+    "w</w>": 285,
+    "able</w>": 286,
+    "tas": 287,
+    "tasks</w>": 288,
+    "clu": 289,
+    "val": 290,
+    "aliz": 291,
+    "les</w>": 292,
+    "help</w>": 293,
+    "sof": 294,
+    "ib": 295,
+    "have</w>": 296,
+    "signi": 297,
+    "signific": 298,
+    "significan": 299,
+    "men": 300,
+    "clo": 301,
+    "clou": 302,
+    "cloud</w>": 303,
+    "mic": 304,
+    "str": 305,
+    "techni": 306,
+    "techniqu": 307,
+    "techniques</w>": 308,
+    "tical</w>": 309,
+    "po": 310,
+    "fe": 311,
+    "featur": 312,
+    "feature</w>": 313,
+    "eng": 314,
+    "engin": 315,
+    "engine": 316,
+    "engineering</w>": 317,
+    "over</w>": 318,
+    "la": 319,
+    "g</w>": 320,
+    "cont": 321,
+    "ins</w>": 322,
+    "ph": 323,
+    "at</w>": 324,
+    "mak": 325,
+    "making</w>": 326,
+    "pop": 327,
+    "popular</w>": 328,
+    "sen": 329,
+    "testing</w>": 330,
+    "tics</w>": 331,
+    "computers</w>": 332,
+    "partic": 333,
+    "how</w>": 334,
+    "lar": 335,
+    "large</w>": 336,
+    "algor": 337,
+    "algori": 338,
+    "algorith": 339,
+    "mat": 340,
+    "ally</w>": 341,
+    "learn</w>": 342,
+    "witho": 343,
+    "without</w>": 344,
+    "programm": 345,
+    "dee": 346,
+    "deep</w>": 347,
+    "uses</w>": 348,
+    "neur": 349,
+    "neural</w>": 350,
+    "net": 351,
+    "networ": 352,
+    "networks</w>": 353,
+    "mul": 354,
+    "multi": 355,
+    "multip": 356,
+    "multiple</w>": 357,
+    "understand</w>": 358,
+    "comple": 359,
+    "complex</w>": 360,
+    "ization</w>": 361,
+    "char": 362,
+    "charac": 363,
+    "character": 364,
+    "characters</w>": 365,
+    "tokens</w>": 366,
+    "words</w>": 367,
+    "they</w>": 368,
+    "so": 369,
+    "or</w>": 370,
+    "applic": 371,
+    "stor": 372,
+    "moder": 373,
+    "modern</w>": 374,
+    "ear": 375,
+    "early</w>": 376,
+    "used</w>": 377,
+    "mb": 378,
+    "reas": 379,
+    "whi": 380,
+    "mpor": 381,
+    "ary</w>": 382,
+    "py": 383,
+    "gh": 384,
+    "interpre": 385,
+    "its</w>": 386,
+    "mpl": 387,
+    "mplic": 388,
+    "ity</w>": 389,
+    "abi": 390,
+    "abili": 391,
+    "abilit": 392,
+    "ability</w>": 393,
+    "beco": 394,
+    "becom": 395,
+    "ely</w>": 396,
+    "lib": 397,
+    "libr": 398,
+    "ture</w>": 399,
+    "tion": 400,
+    "duc": 401,
+    "ff": 402,
+    "inp": 403,
+    "input</w>": 404,
+    "wh": 405,
+    "when</w>": 406,
+    "led</w>": 407,
+    "pow": 408,
+    "power": 409,
+    "powerful</w>": 410,
+    "pt</w>": 411,
+    "preprocessing</w>": 412,
+    "any</w>": 413,
+    "ip": 414,
+    "invol": 415,
+    "involv": 416,
+    "involves</w>": 417,
+    "cle": 418,
+    "clean": 419,
+    "cleaning</w>": 420,
+    "transforming</w>": 421,
+    "raw</w>": 422,
+    "and": 423,
+    "ling</w>": 424,
+    "ical</w>": 425,
+    "var": 426,
+    "vari": 427,
+    "variab": 428,
+    "variables</w>": 429,
+    "sion</w>": 430,
+    "l</w>": 431,
+    "git</w>": 432,
+    "tra": 433,
+    "thei": 434,
+    "their": 435,
+    "their</w>": 436,
+    "col": 437,
+    "lab": 438,
+    "orat": 439,
+    "understan": 440,
+    "understanding</w>": 441,
+    "softw": 442,
+    "software</w>": 443,
+    "jec": 444,
+    "reg": 445,
+    "ssi": 446,
+    "tex": 447,
+    "text</w>": 448,
+    "provi": 449,
+    "machines</w>": 450,
+    "worl": 451,
+    "adv": 452,
+    "advan": 453,
+    "advanc": 454,
+    "im": 455,
+    "impro": 456,
+    "ima": 457,
+    "image</w>": 458,
+    "tection</w>": 459,
+    "gen": 460,
+    "gener": 461,
+    "computing</w>": 462,
+    "go": 463,
+    "goo": 464,
+    "ser": 465,
+    "yed</w>": 466,
+    "made</w>": 467,
+    "ble</w>": 468,
+    "research": 469,
+    "researchers</w>": 470,
+    "stati": 471,
+    "statis": 472,
+    "statistical</w>": 473,
+    "conce": 474,
+    "prob": 475,
+    "distr": 476,
+    "distrib": 477,
+    "distribu": 478,
+    "ations</w>": 479,
+    "bi": 480,
+    "consi": 481,
+    "consider": 482,
+    "time</w>": 483,
+    "ance</w>": 484,
+    "perform": 485,
+    "ros": 486
+  },
+  "id_to_token": {
+    "0": "<PAD>",
+    "1": "<UNK>",
+    "2": "<BOS>",
+    "3": "<EOS>",
+    "4": "t",
+    "5": "h",
+    "6": "e",
+    "7": "</w>",
+    "8": "q",
+    "9": "u",
+    "10": "i",
+    "11": "c",
+    "12": "k",
+    "13": "b",
+    "14": "r",
+    "15": "o",
+    "16": "w",
+    "17": "n",
+    "18": "f",
+    "19": "x",
+    "20": "j",
+    "21": "m",
+    "22": "p",
+    "23": "s",
+    "24": "v",
+    "25": "l",
+    "26": "a",
+    "27": "z",
+    "28": "y",
+    "29": "d",
+    "30": "g",
+    "31": ".",
+    "32": ",",
+    "33": "-",
+    "34": "s</w>",
+    "35": "e</w>",
+    "36": "in",
+    "37": "an",
+    "38": "d</w>",
+    "39": "er",
+    "40": "ing",
+    "41": "at",
+    "42": "ar",
+    "43": "ing</w>",
+    "44": "on",
+    "45": "en",
+    "46": "al",
+    "47": ",</w>",
+    "48": "th",
+    "49": ".</w>",
+    "50": "and</w>",
+    "51": "or",
+    "52": "t</w>",
+    "53": "ro",
+    "54": "ti",
+    "55": "a</w>",
+    "56": "el",
+    "57": "y</w>",
+    "58": "ch",
+    "59": "le",
+    "60": "on</w>",
+    "61": "ic",
+    "62": "st",
+    "63": "al</w>",
+    "64": "of",
+    "65": "pro",
+    "66": "to",
+    "67": "dat",
+    "68": "es</w>",
+    "69": "re",
+    "70": "si",
+    "71": "ce</w>",
+    "72": "ma",
+    "73": "the</w>",
+    "74": "co",
+    "75": "data</w>",
+    "76": "ter",
+    "77": "of</w>",
+    "78": "ed</w>",
+    "79": "to</w>",
+    "80": "mp",
+    "81": "for",
+    "82": "li",
+    "83": "in</w>",
+    "84": "ul",
+    "85": "ence</w>",
+    "86": "es",
+    "87": "ur",
+    "88": "lear",
+    "89": "learn",
+    "90": "con",
+    "91": "te",
+    "92": "ati",
+    "93": "is</w>",
+    "94": "ces",
+    "95": "ci",
+    "96": "learning</w>",
+    "97": "se",
+    "98": "ra",
+    "99": "ab",
+    "100": "ge</w>",
+    "101": "proces",
+    "102": "mo",
+    "103": "mach",
+    "104": "machin",
+    "105": "le</w>",
+    "106": "ts</w>",
+    "107": "de",
+    "108": "ang",
+    "109": "m</w>",
+    "110": "op",
+    "111": "su",
+    "112": "comp",
+    "113": "anal",
+    "114": "analy",
+    "115": "machine</w>",
+    "116": "mod",
+    "117": "are</w>",
+    "118": "as</w>",
+    "119": "it</w>",
+    "120": "for</w>",
+    "121": "sing</w>",
+    "122": "fic",
+    "123": "un",
+    "124": "ly</w>",
+    "125": "ation</w>",
+    "126": "ke</w>",
+    "127": "qu",
+    "128": "ver",
+    "129": "as",
+    "130": "atur",
+    "131": "lang",
+    "132": "langu",
+    "133": "langua",
+    "134": "language</w>",
+    "135": "processing</w>",
+    "136": "tic",
+    "137": "compu",
+    "138": "wi",
+    "139": "ac",
+    "140": "ons</w>",
+    "141": "en</w>",
+    "142": "ow",
+    "143": "ut</w>",
+    "144": "ex",
+    "145": "ers</w>",
+    "146": "model",
+    "147": "iz",
+    "148": "form",
+    "149": "like</w>",
+    "150": "ni",
+    "151": "ular",
+    "152": "is",
+    "153": "sci",
+    "154": "int",
+    "155": "an</w>",
+    "156": "pat",
+    "157": "patter",
+    "158": "pattern",
+    "159": "pl",
+    "160": "it",
+    "161": "p</w>",
+    "162": "ne",
+    "163": "wor",
+    "164": "der",
+    "165": "ent</w>",
+    "166": "ch</w>",
+    "167": "sy",
+    "168": "ol",
+    "169": "ste",
+    "170": "vel",
+    "171": "pre",
+    "172": "tr",
+    "173": "cr",
+    "174": "sis</w>",
+    "175": "cl",
+    "176": "de</w>",
+    "177": "ds</w>",
+    "178": "computer",
+    "179": "science</w>",
+    "180": "arti",
+    "181": "artific",
+    "182": "artifici",
+    "183": "artificial</w>",
+    "184": "intel",
+    "185": "intelli",
+    "186": "intellig",
+    "187": "intelligence</w>",
+    "188": "with",
+    "189": "be",
+    "190": "par",
+    "191": "ms</w>",
+    "192": "patterns</w>",
+    "193": "ks</w>",
+    "194": "ting</w>",
+    "195": "the",
+    "196": "hi",
+    "197": "ai",
+    "198": "syste",
+    "199": "ha",
+    "200": "ve</w>",
+    "201": "tran",
+    "202": "trans",
+    "203": "tion</w>",
+    "204": "ful",
+    "205": "ful</w>",
+    "206": "analysis</w>",
+    "207": "ec",
+    "208": "k</w>",
+    "209": "n</w>",
+    "210": "fo",
+    "211": "this</w>",
+    "212": "ular</w>",
+    "213": "natur",
+    "214": "natural</w>",
+    "215": "fi",
+    "216": "inter",
+    "217": "process</w>",
+    "218": "us",
+    "219": "under",
+    "220": "underst",
+    "221": "ding</w>",
+    "222": "ai</w>",
+    "223": "sear",
+    "224": "per",
+    "225": "systems</w>",
+    "226": "transform",
+    "227": "er</w>",
+    "228": "me",
+    "229": "di",
+    "230": "devel",
+    "231": "develop",
+    "232": "hel",
+    "233": "vi",
+    "234": "gni",
+    "235": "ies</w>",
+    "236": "tech",
+    "237": "ering</w>",
+    "238": "x</w>",
+    "239": "over",
+    "240": "do",
+    "241": "sting</w>",
+    "242": "sub",
+    "243": "fiel",
+    "244": "field</w>",
+    "245": "computer</w>",
+    "246": "conc",
+    "247": "with</w>",
+    "248": "tions</w>",
+    "249": "tw",
+    "250": "ow</w>",
+    "251": "prog",
+    "252": "progra",
+    "253": "analyz",
+    "254": "analyze</w>",
+    "255": "gor",
+    "256": "can</w>",
+    "257": "fro",
+    "258": "from</w>",
+    "259": "plic",
+    "260": "mm",
+    "261": "model</w>",
+    "262": "tok",
+    "263": "token",
+    "264": "sequ",
+    "265": "sequence</w>",
+    "266": "but</w>",
+    "267": "ap",
+    "268": "tim",
+    "269": "resear",
+    "270": "foc",
+    "271": "ted</w>",
+    "272": "ad",
+    "273": "has</w>",
+    "274": "du",
+    "275": "ten",
+    "276": "tec",
+    "277": "ure</w>",
+    "278": "vol",
+    "279": "models</w>",
+    "280": "developm",
+    "281": "development</w>",
+    "282": "cru",
+    "283": "cruci",
+    "284": "crucial</w>",
+    "285": "w</w>",
+    "286": "able</w>",
+    "287": "tas",
+    "288": "tasks</w>",
+    "289": "clu",
+    "290": "val",
+    "291": "aliz",
+    "292": "les</w>",
+    "293": "help</w>",
+    "294": "sof",
+    "295": "ib",
+    "296": "have</w>",
+    "297": "signi",
+    "298": "signific",
+    "299": "significan",
+    "300": "men",
+    "301": "clo",
+    "302": "clou",
+    "303": "cloud</w>",
+    "304": "mic",
+    "305": "str",
+    "306": "techni",
+    "307": "techniqu",
+    "308": "techniques</w>",
+    "309": "tical</w>",
+    "310": "po",
+    "311": "fe",
+    "312": "featur",
+    "313": "feature</w>",
+    "314": "eng",
+    "315": "engin",
+    "316": "engine",
+    "317": "engineering</w>",
+    "318": "over</w>",
+    "319": "la",
+    "320": "g</w>",
+    "321": "cont",
+    "322": "ins</w>",
+    "323": "ph",
+    "324": "at</w>",
+    "325": "mak",
+    "326": "making</w>",
+    "327": "pop",
+    "328": "popular</w>",
+    "329": "sen",
+    "330": "testing</w>",
+    "331": "tics</w>",
+    "332": "computers</w>",
+    "333": "partic",
+    "334": "how</w>",
+    "335": "lar",
+    "336": "large</w>",
+    "337": "algor",
+    "338": "algori",
+    "339": "algorith",
+    "340": "mat",
+    "341": "ally</w>",
+    "342": "learn</w>",
+    "343": "witho",
+    "344": "without</w>",
+    "345": "programm",
+    "346": "dee",
+    "347": "deep</w>",
+    "348": "uses</w>",
+    "349": "neur",
+    "350": "neural</w>",
+    "351": "net",
+    "352": "networ",
+    "353": "networks</w>",
+    "354": "mul",
+    "355": "multi",
+    "356": "multip",
+    "357": "multiple</w>",
+    "358": "understand</w>",
+    "359": "comple",
+    "360": "complex</w>",
+    "361": "ization</w>",
+    "362": "char",
+    "363": "charac",
+    "364": "character",
+    "365": "characters</w>",
+    "366": "tokens</w>",
+    "367": "words</w>",
+    "368": "they</w>",
+    "369": "so",
+    "370": "or</w>",
+    "371": "applic",
+    "372": "stor",
+    "373": "moder",
+    "374": "modern</w>",
+    "375": "ear",
+    "376": "early</w>",
+    "377": "used</w>",
+    "378": "mb",
+    "379": "reas",
+    "380": "whi",
+    "381": "mpor",
+    "382": "ary</w>",
+    "383": "py",
+    "384": "gh",
+    "385": "interpre",
+    "386": "its</w>",
+    "387": "mpl",
+    "388": "mplic",
+    "389": "ity</w>",
+    "390": "abi",
+    "391": "abili",
+    "392": "abilit",
+    "393": "ability</w>",
+    "394": "beco",
+    "395": "becom",
+    "396": "ely</w>",
+    "397": "lib",
+    "398": "libr",
+    "399": "ture</w>",
+    "400": "tion",
+    "401": "duc",
+    "402": "ff",
+    "403": "inp",
+    "404": "input</w>",
+    "405": "wh",
+    "406": "when</w>",
+    "407": "led</w>",
+    "408": "pow",
+    "409": "power",
+    "410": "powerful</w>",
+    "411": "pt</w>",
+    "412": "preprocessing</w>",
+    "413": "any</w>",
+    "414": "ip",
+    "415": "invol",
+    "416": "involv",
+    "417": "involves</w>",
+    "418": "cle",
+    "419": "clean",
+    "420": "cleaning</w>",
+    "421": "transforming</w>",
+    "422": "raw</w>",
+    "423": "and",
+    "424": "ling</w>",
+    "425": "ical</w>",
+    "426": "var",
+    "427": "vari",
+    "428": "variab",
+    "429": "variables</w>",
+    "430": "sion</w>",
+    "431": "l</w>",
+    "432": "git</w>",
+    "433": "tra",
+    "434": "thei",
+    "435": "their",
+    "436": "their</w>",
+    "437": "col",
+    "438": "lab",
+    "439": "orat",
+    "440": "understan",
+    "441": "understanding</w>",
+    "442": "softw",
+    "443": "software</w>",
+    "444": "jec",
+    "445": "reg",
+    "446": "ssi",
+    "447": "tex",
+    "448": "text</w>",
+    "449": "provi",
+    "450": "machines</w>",
+    "451": "worl",
+    "452": "adv",
+    "453": "advan",
+    "454": "advanc",
+    "455": "im",
+    "456": "impro",
+    "457": "ima",
+    "458": "image</w>",
+    "459": "tection</w>",
+    "460": "gen",
+    "461": "gener",
+    "462": "computing</w>",
+    "463": "go",
+    "464": "goo",
+    "465": "ser",
+    "466": "yed</w>",
+    "467": "made</w>",
+    "468": "ble</w>",
+    "469": "research",
+    "470": "researchers</w>",
+    "471": "stati",
+    "472": "statis",
+    "473": "statistical</w>",
+    "474": "conce",
+    "475": "prob",
+    "476": "distr",
+    "477": "distrib",
+    "478": "distribu",
+    "479": "ations</w>",
+    "480": "bi",
+    "481": "consi",
+    "482": "consider",
+    "483": "time</w>",
+    "484": "ance</w>",
+    "485": "perform",
+    "486": "ros"
+  },
+  "token_freqs": {
+    "t": 310,
+    "h": 101,
+    "e": 468,
+    "</w>": 759,
+    "q": 7,
+    "u": 105,
+    "i": 347,
+    "c": 192,
+    "k": 26,
+    "b": 43,
+    "r": 256,
+    "o": 252,
+    "w": 37,
+    "n": 363,
+    "f": 79,
+    "x": 12,
+    "j": 4,
+    "m": 109,
+    "p": 113,
+    "s": 272,
+    "v": 38,
+    "l": 202,
+    "a": 391,
+    "z": 14,
+    "y": 54,
+    "d": 158,
+    "g": 117,
+    ".": 40,
+    ",": 43,
+    "-": 3,
+    "s</w>": 126,
+    "e</w>": 123,
+    "in": 116,
+    "an": 91,
+    "d</w>": 67,
+    "er": 61,
+    "ing": 61,
+    "at": 59,
+    "ar": 58,
+    "ing</w>": 57,
+    "on": 51,
+    "en": 51,
+    "al": 48,
+    ",</w>": 43,
+    "th": 42,
+    ".</w>": 40,
+    "and</w>": 40,
+    "or": 38,
+    "t</w>": 37,
+    "ro": 33,
+    "ti": 32,
+    "a</w>": 31,
+    "el": 31,
+    "y</w>": 30,
+    "ch": 30,
+    "le": 28,
+    "on</w>": 24,
+    "ic": 23,
+    "st": 23,
+    "al</w>": 23,
+    "of": 22,
+    "pro": 22,
+    "to": 22,
+    "dat": 22,
+    "es</w>": 22,
+    "re": 21,
+    "si": 21,
+    "ce</w>": 20,
+    "ma": 20,
+    "the</w>": 19,
+    "co": 19,
+    "data</w>": 19,
+    "ter": 18,
+    "of</w>": 17,
+    "ed</w>": 17,
+    "to</w>": 17,
+    "mp": 16,
+    "for": 16,
+    "li": 16,
+    "in</w>": 16,
+    "ul": 15,
+    "ence</w>": 15,
+    "es": 15,
+    "ur": 14,
+    "lear": 14,
+    "learn": 14,
+    "con": 13,
+    "te": 13,
+    "ati": 13,
+    "is</w>": 12,
+    "ces": 12,
+    "ci": 12,
+    "learning</w>": 12,
+    "se": 12,
+    "ra": 11,
+    "ab": 11,
+    "ge</w>": 11,
+    "proces": 11,
+    "mo": 11,
+    "mach": 11,
+    "machin": 11,
+    "le</w>": 11,
+    "ts</w>": 10,
+    "de": 10,
+    "ang": 9,
+    "m</w>": 9,
+    "op": 9,
+    "su": 9,
+    "comp": 9,
+    "anal": 9,
+    "analy": 9,
+    "machine</w>": 9,
+    "mod": 9,
+    "are</w>": 9,
+    "as</w>": 9,
+    "it</w>": 8,
+    "for</w>": 8,
+    "sing</w>": 8,
+    "fic": 8,
+    "un": 8,
+    "ly</w>": 8,
+    "ation</w>": 8,
+    "ke</w>": 8,
+    "qu": 7,
+    "ver": 7,
+    "as": 7,
+    "atur": 7,
+    "lang": 7,
+    "langu": 7,
+    "langua": 7,
+    "language</w>": 7,
+    "processing</w>": 7,
+    "tic": 7,
+    "compu": 7,
+    "wi": 7,
+    "ac": 7,
+    "ons</w>": 7,
+    "en</w>": 7,
+    "ow": 7,
+    "ut</w>": 7,
+    "ex": 7,
+    "ers</w>": 7,
+    "model": 7,
+    "iz": 7,
+    "form": 7,
+    "like</w>": 7,
+    "ni": 7,
+    "ular": 6,
+    "is": 6,
+    "sci": 6,
+    "int": 6,
+    "an</w>": 6,
+    "pat": 6,
+    "patter": 6,
+    "pattern": 6,
+    "pl": 6,
+    "it": 6,
+    "p</w>": 6,
+    "ne": 6,
+    "wor": 6,
+    "der": 6,
+    "ent</w>": 6,
+    "ch</w>": 6,
+    "sy": 6,
+    "ol": 6,
+    "ste": 6,
+    "vel": 6,
+    "pre": 6,
+    "tr": 6,
+    "cr": 6,
+    "sis</w>": 6,
+    "cl": 6,
+    "de</w>": 6,
+    "ds</w>": 5,
+    "computer": 5,
+    "science</w>": 5,
+    "arti": 5,
+    "artific": 5,
+    "artifici": 5,
+    "artificial</w>": 5,
+    "intel": 5,
+    "intelli": 5,
+    "intellig": 5,
+    "intelligence</w>": 5,
+    "with": 5,
+    "be": 5,
+    "par": 5,
+    "ms</w>": 5,
+    "patterns</w>": 5,
+    "ks</w>": 5,
+    "ting</w>": 5,
+    "the": 5,
+    "hi": 5,
+    "ai": 5,
+    "syste": 5,
+    "ha": 5,
+    "ve</w>": 5,
+    "tran": 5,
+    "trans": 5,
+    "tion</w>": 5,
+    "ful": 5,
+    "ful</w>": 5,
+    "analysis</w>": 5,
+    "ec": 5,
+    "k</w>": 4,
+    "n</w>": 4,
+    "fo": 4,
+    "this</w>": 4,
+    "ular</w>": 4,
+    "natur": 4,
+    "natural</w>": 4,
+    "fi": 4,
+    "inter": 4,
+    "process</w>": 4,
+    "us": 4,
+    "under": 4,
+    "underst": 4,
+    "ding</w>": 4,
+    "ai</w>": 4,
+    "sear": 4,
+    "per": 4,
+    "systems</w>": 4,
+    "transform": 4,
+    "er</w>": 4,
+    "me": 4,
+    "di": 4,
+    "devel": 4,
+    "develop": 4,
+    "hel": 4,
+    "vi": 4,
+    "gni": 4,
+    "ies</w>": 4,
+    "tech": 4,
+    "ering</w>": 4,
+    "x</w>": 3,
+    "over": 3,
+    "do": 3,
+    "sting</w>": 3,
+    "sub": 3,
+    "fiel": 3,
+    "field</w>": 3,
+    "computer</w>": 3,
+    "conc": 3,
+    "with</w>": 3,
+    "tions</w>": 3,
+    "tw": 3,
+    "ow</w>": 3,
+    "prog": 3,
+    "progra": 3,
+    "analyz": 3,
+    "analyze</w>": 3,
+    "gor": 3,
+    "can</w>": 3,
+    "fro": 3,
+    "from</w>": 3,
+    "plic": 3,
+    "mm": 3,
+    "model</w>": 3,
+    "tok": 3,
+    "token": 3,
+    "sequ": 3,
+    "sequence</w>": 3,
+    "but</w>": 3,
+    "ap": 3,
+    "tim": 3,
+    "resear": 3,
+    "foc": 3,
+    "ted</w>": 3,
+    "ad": 3,
+    "has</w>": 3,
+    "du": 3,
+    "ten": 3,
+    "tec": 3,
+    "ure</w>": 3,
+    "vol": 3,
+    "models</w>": 3,
+    "developm": 3,
+    "development</w>": 3,
+    "cru": 3,
+    "cruci": 3,
+    "crucial</w>": 3,
+    "w</w>": 3,
+    "able</w>": 3,
+    "tas": 3,
+    "tasks</w>": 3,
+    "clu": 3,
+    "val": 3,
+    "aliz": 3,
+    "les</w>": 3,
+    "help</w>": 3,
+    "sof": 3,
+    "ib": 3,
+    "have</w>": 3,
+    "signi": 3,
+    "signific": 3,
+    "significan": 3,
+    "men": 3,
+    "clo": 3,
+    "clou": 3,
+    "cloud</w>": 3,
+    "mic": 3,
+    "str": 3,
+    "techni": 3,
+    "techniqu": 3,
+    "techniques</w>": 3,
+    "tical</w>": 3,
+    "po": 3,
+    "fe": 3,
+    "featur": 3,
+    "feature</w>": 3,
+    "eng": 3,
+    "engin": 3,
+    "engine": 3,
+    "engineering</w>": 3,
+    "over</w>": 2,
+    "la": 2,
+    "g</w>": 2,
+    "cont": 2,
+    "ins</w>": 2,
+    "ph": 2,
+    "at</w>": 2,
+    "mak": 2,
+    "making</w>": 2,
+    "pop": 2,
+    "popular</w>": 2,
+    "sen": 2,
+    "testing</w>": 2,
+    "tics</w>": 2,
+    "computers</w>": 2,
+    "partic": 2,
+    "how</w>": 2,
+    "lar": 2,
+    "large</w>": 2,
+    "algor": 2,
+    "algori": 2,
+    "algorith": 2,
+    "mat": 2,
+    "ally</w>": 2,
+    "learn</w>": 2,
+    "witho": 2,
+    "without</w>": 2,
+    "programm": 2,
+    "dee": 2,
+    "deep</w>": 2,
+    "uses</w>": 2,
+    "neur": 2,
+    "neural</w>": 2,
+    "net": 2,
+    "networ": 2,
+    "networks</w>": 2,
+    "mul": 2,
+    "multi": 2,
+    "multip": 2,
+    "multiple</w>": 2,
+    "understand</w>": 2,
+    "comple": 2,
+    "complex</w>": 2,
+    "ization</w>": 2,
+    "char": 2,
+    "charac": 2,
+    "character": 2,
+    "characters</w>": 2,
+    "tokens</w>": 2,
+    "words</w>": 2,
+    "they</w>": 2,
+    "so": 2,
+    "or</w>": 2,
+    "applic": 2,
+    "stor": 2,
+    "moder": 2,
+    "modern</w>": 2,
+    "ear": 2,
+    "early</w>": 2,
+    "used</w>": 2,
+    "mb": 2,
+    "reas": 2,
+    "whi": 2,
+    "mpor": 2,
+    "ary</w>": 2,
+    "py": 2,
+    "gh": 2,
+    "interpre": 2,
+    "its</w>": 2,
+    "mpl": 2,
+    "mplic": 2,
+    "ity</w>": 2,
+    "abi": 2,
+    "abili": 2,
+    "abilit": 2,
+    "ability</w>": 2,
+    "beco": 2,
+    "becom": 2,
+    "ely</w>": 2,
+    "lib": 2,
+    "libr": 2,
+    "ture</w>": 2,
+    "tion": 2,
+    "duc": 2,
+    "ff": 2,
+    "inp": 2,
+    "input</w>": 2,
+    "wh": 2,
+    "when</w>": 2,
+    "led</w>": 2,
+    "pow": 2,
+    "power": 2,
+    "powerful</w>": 2,
+    "pt</w>": 2,
+    "preprocessing</w>": 2,
+    "any</w>": 2,
+    "ip": 2,
+    "invol": 2,
+    "involv": 2,
+    "involves</w>": 2,
+    "cle": 2,
+    "clean": 2,
+    "cleaning</w>": 2,
+    "transforming</w>": 2,
+    "raw</w>": 2,
+    "and": 2,
+    "ling</w>": 2,
+    "ical</w>": 2,
+    "var": 2,
+    "vari": 2,
+    "variab": 2,
+    "variables</w>": 2,
+    "sion</w>": 2,
+    "l</w>": 2,
+    "git</w>": 2,
+    "tra": 2,
+    "thei": 2,
+    "their": 2,
+    "their</w>": 2,
+    "col": 2,
+    "lab": 2,
+    "orat": 2,
+    "understan": 2,
+    "understanding</w>": 2,
+    "softw": 2,
+    "software</w>": 2,
+    "jec": 2,
+    "reg": 2,
+    "ssi": 2,
+    "tex": 2,
+    "text</w>": 2,
+    "provi": 2,
+    "machines</w>": 2,
+    "worl": 2,
+    "adv": 2,
+    "advan": 2,
+    "advanc": 2,
+    "im": 2,
+    "impro": 2,
+    "ima": 2,
+    "image</w>": 2,
+    "tection</w>": 2,
+    "gen": 2,
+    "gener": 2,
+    "computing</w>": 2,
+    "go": 2,
+    "goo": 2,
+    "ser": 2,
+    "yed</w>": 2,
+    "made</w>": 2,
+    "ble</w>": 2,
+    "research": 2,
+    "researchers</w>": 2,
+    "stati": 2,
+    "statis": 2,
+    "statistical</w>": 2,
+    "conce": 2,
+    "prob": 2,
+    "distr": 2,
+    "distrib": 2,
+    "distribu": 2,
+    "ations</w>": 2,
+    "bi": 2,
+    "consi": 2,
+    "consider": 2,
+    "time</w>": 2,
+    "ance</w>": 2,
+    "perform": 2,
+    "ros": 2
+  },
+  "word_freqs": {
+    "t": 310,
+    "h": 101,
+    "e": 468,
+    "</w>": 759,
+    "q": 7,
+    "u": 105,
+    "i": 347,
+    "c": 192,
+    "k": 26,
+    "b": 43,
+    "r": 256,
+    "o": 252,
+    "w": 37,
+    "n": 363,
+    "f": 79,
+    "x": 12,
+    "j": 4,
+    "m": 109,
+    "p": 113,
+    "s": 272,
+    "v": 38,
+    "l": 202,
+    "a": 391,
+    "z": 14,
+    "y": 54,
+    "d": 158,
+    "g": 117,
+    ".": 40,
+    ",": 43,
+    "-": 3,
+    "s</w>": 126,
+    "e</w>": 123,
+    "in": 116,
+    "an": 91,
+    "d</w>": 67,
+    "er": 61,
+    "ing": 61,
+    "at": 59,
+    "ar": 58,
+    "ing</w>": 57,
+    "on": 51,
+    "en": 51,
+    "al": 48,
+    ",</w>": 43,
+    "th": 42,
+    ".</w>": 40,
+    "and</w>": 40,
+    "or": 38,
+    "t</w>": 37,
+    "ro": 33,
+    "ti": 32,
+    "a</w>": 31,
+    "el": 31,
+    "y</w>": 30,
+    "ch": 30,
+    "le": 28,
+    "on</w>": 24,
+    "ic": 23,
+    "st": 23,
+    "al</w>": 23,
+    "of": 22,
+    "pro": 22,
+    "to": 22,
+    "dat": 22,
+    "es</w>": 22,
+    "re": 21,
+    "si": 21,
+    "ce</w>": 20,
+    "ma": 20,
+    "the</w>": 19,
+    "co": 19,
+    "data</w>": 19,
+    "ter": 18,
+    "of</w>": 17,
+    "ed</w>": 17,
+    "to</w>": 17,
+    "mp": 16,
+    "for": 16,
+    "li": 16,
+    "in</w>": 16,
+    "ul": 15,
+    "ence</w>": 15,
+    "es": 15,
+    "ur": 14,
+    "lear": 14,
+    "learn": 14,
+    "con": 13,
+    "te": 13,
+    "ati": 13,
+    "is</w>": 12,
+    "ces": 12,
+    "ci": 12,
+    "learning</w>": 12,
+    "se": 12,
+    "ra": 11,
+    "ab": 11,
+    "ge</w>": 11,
+    "proces": 11,
+    "mo": 11,
+    "mach": 11,
+    "machin": 11,
+    "le</w>": 11,
+    "ts</w>": 10,
+    "de": 10,
+    "ang": 9,
+    "m</w>": 9,
+    "op": 9,
+    "su": 9,
+    "comp": 9,
+    "anal": 9,
+    "analy": 9,
+    "machine</w>": 9,
+    "mod": 9,
+    "are</w>": 9,
+    "as</w>": 9,
+    "it</w>": 8,
+    "for</w>": 8,
+    "sing</w>": 8,
+    "fic": 8,
+    "un": 8,
+    "ly</w>": 8,
+    "ation</w>": 8,
+    "ke</w>": 8,
+    "qu": 7,
+    "ver": 7,
+    "as": 7,
+    "atur": 7,
+    "lang": 7,
+    "langu": 7,
+    "langua": 7,
+    "language</w>": 7,
+    "processing</w>": 7,
+    "tic": 7,
+    "compu": 7,
+    "wi": 7,
+    "ac": 7,
+    "ons</w>": 7,
+    "en</w>": 7,
+    "ow": 7,
+    "ut</w>": 7,
+    "ex": 7,
+    "ers</w>": 7,
+    "model": 7,
+    "iz": 7,
+    "form": 7,
+    "like</w>": 7,
+    "ni": 7,
+    "ular": 6,
+    "is": 6,
+    "sci": 6,
+    "int": 6,
+    "an</w>": 6,
+    "pat": 6,
+    "patter": 6,
+    "pattern": 6,
+    "pl": 6,
+    "it": 6,
+    "p</w>": 6,
+    "ne": 6,
+    "wor": 6,
+    "der": 6,
+    "ent</w>": 6,
+    "ch</w>": 6,
+    "sy": 6,
+    "ol": 6,
+    "ste": 6,
+    "vel": 6,
+    "pre": 6,
+    "tr": 6,
+    "cr": 6,
+    "sis</w>": 6,
+    "cl": 6,
+    "de</w>": 6,
+    "ds</w>": 5,
+    "computer": 5,
+    "science</w>": 5,
+    "arti": 5,
+    "artific": 5,
+    "artifici": 5,
+    "artificial</w>": 5,
+    "intel": 5,
+    "intelli": 5,
+    "intellig": 5,
+    "intelligence</w>": 5,
+    "with": 5,
+    "be": 5,
+    "par": 5,
+    "ms</w>": 5,
+    "patterns</w>": 5,
+    "ks</w>": 5,
+    "ting</w>": 5,
+    "the": 5,
+    "hi": 5,
+    "ai": 5,
+    "syste": 5,
+    "ha": 5,
+    "ve</w>": 5,
+    "tran": 5,
+    "trans": 5,
+    "tion</w>": 5,
+    "ful": 5,
+    "ful</w>": 5,
+    "analysis</w>": 5,
+    "ec": 5,
+    "k</w>": 4,
+    "n</w>": 4,
+    "fo": 4,
+    "this</w>": 4,
+    "ular</w>": 4,
+    "natur": 4,
+    "natural</w>": 4,
+    "fi": 4,
+    "inter": 4,
+    "process</w>": 4,
+    "us": 4,
+    "under": 4,
+    "underst": 4,
+    "ding</w>": 4,
+    "ai</w>": 4,
+    "sear": 4,
+    "per": 4,
+    "systems</w>": 4,
+    "transform": 4,
+    "er</w>": 4,
+    "me": 4,
+    "di": 4,
+    "devel": 4,
+    "develop": 4,
+    "hel": 4,
+    "vi": 4,
+    "gni": 4,
+    "ies</w>": 4,
+    "tech": 4,
+    "ering</w>": 4,
+    "x</w>": 3,
+    "over": 3,
+    "do": 3,
+    "sting</w>": 3,
+    "sub": 3,
+    "fiel": 3,
+    "field</w>": 3,
+    "computer</w>": 3,
+    "conc": 3,
+    "with</w>": 3,
+    "tions</w>": 3,
+    "tw": 3,
+    "ow</w>": 3,
+    "prog": 3,
+    "progra": 3,
+    "analyz": 3,
+    "analyze</w>": 3,
+    "gor": 3,
+    "can</w>": 3,
+    "fro": 3,
+    "from</w>": 3,
+    "plic": 3,
+    "mm": 3,
+    "model</w>": 3,
+    "tok": 3,
+    "token": 3,
+    "sequ": 3,
+    "sequence</w>": 3,
+    "but</w>": 3,
+    "ap": 3,
+    "tim": 3,
+    "resear": 3,
+    "foc": 3,
+    "ted</w>": 3,
+    "ad": 3,
+    "has</w>": 3,
+    "du": 3,
+    "ten": 3,
+    "tec": 3,
+    "ure</w>": 3,
+    "vol": 3,
+    "models</w>": 3,
+    "developm": 3,
+    "development</w>": 3,
+    "cru": 3,
+    "cruci": 3,
+    "crucial</w>": 3,
+    "w</w>": 3,
+    "able</w>": 3,
+    "tas": 3,
+    "tasks</w>": 3,
+    "clu": 3,
+    "val": 3,
+    "aliz": 3,
+    "les</w>": 3,
+    "help</w>": 3,
+    "sof": 3,
+    "ib": 3,
+    "have</w>": 3,
+    "signi": 3,
+    "signific": 3,
+    "significan": 3,
+    "men": 3,
+    "clo": 3,
+    "clou": 3,
+    "cloud</w>": 3,
+    "mic": 3,
+    "str": 3,
+    "techni": 3,
+    "techniqu": 3,
+    "techniques</w>": 3,
+    "tical</w>": 3,
+    "po": 3,
+    "fe": 3,
+    "featur": 3,
+    "feature</w>": 3,
+    "eng": 3,
+    "engin": 3,
+    "engine": 3,
+    "engineering</w>": 3,
+    "over</w>": 2,
+    "la": 2,
+    "g</w>": 2,
+    "cont": 2,
+    "ins</w>": 2,
+    "ph": 2,
+    "at</w>": 2,
+    "mak": 2,
+    "making</w>": 2,
+    "pop": 2,
+    "popular</w>": 2,
+    "sen": 2,
+    "testing</w>": 2,
+    "tics</w>": 2,
+    "computers</w>": 2,
+    "partic": 2,
+    "how</w>": 2,
+    "lar": 2,
+    "large</w>": 2,
+    "algor": 2,
+    "algori": 2,
+    "algorith": 2,
+    "mat": 2,
+    "ally</w>": 2,
+    "learn</w>": 2,
+    "witho": 2,
+    "without</w>": 2,
+    "programm": 2,
+    "dee": 2,
+    "deep</w>": 2,
+    "uses</w>": 2,
+    "neur": 2,
+    "neural</w>": 2,
+    "net": 2,
+    "networ": 2,
+    "networks</w>": 2,
+    "mul": 2,
+    "multi": 2,
+    "multip": 2,
+    "multiple</w>": 2,
+    "understand</w>": 2,
+    "comple": 2,
+    "complex</w>": 2,
+    "ization</w>": 2,
+    "char": 2,
+    "charac": 2,
+    "character": 2,
+    "characters</w>": 2,
+    "tokens</w>": 2,
+    "words</w>": 2,
+    "they</w>": 2,
+    "so": 2,
+    "or</w>": 2,
+    "applic": 2,
+    "stor": 2,
+    "moder": 2,
+    "modern</w>": 2,
+    "ear": 2,
+    "early</w>": 2,
+    "used</w>": 2,
+    "mb": 2,
+    "reas": 2,
+    "whi": 2,
+    "mpor": 2,
+    "ary</w>": 2,
+    "py": 2,
+    "gh": 2,
+    "interpre": 2,
+    "its</w>": 2,
+    "mpl": 2,
+    "mplic": 2,
+    "ity</w>": 2,
+    "abi": 2,
+    "abili": 2,
+    "abilit": 2,
+    "ability</w>": 2,
+    "beco": 2,
+    "becom": 2,
+    "ely</w>": 2,
+    "lib": 2,
+    "libr": 2,
+    "ture</w>": 2,
+    "tion": 2,
+    "duc": 2,
+    "ff": 2,
+    "inp": 2,
+    "input</w>": 2,
+    "wh": 2,
+    "when</w>": 2,
+    "led</w>": 2,
+    "pow": 2,
+    "power": 2,
+    "powerful</w>": 2,
+    "pt</w>": 2,
+    "preprocessing</w>": 2,
+    "any</w>": 2,
+    "ip": 2,
+    "invol": 2,
+    "involv": 2,
+    "involves</w>": 2,
+    "cle": 2,
+    "clean": 2,
+    "cleaning</w>": 2,
+    "transforming</w>": 2,
+    "raw</w>": 2,
+    "and": 2,
+    "ling</w>": 2,
+    "ical</w>": 2,
+    "var": 2,
+    "vari": 2,
+    "variab": 2,
+    "variables</w>": 2,
+    "sion</w>": 2,
+    "l</w>": 2,
+    "git</w>": 2,
+    "tra": 2,
+    "thei": 2,
+    "their": 2,
+    "their</w>": 2,
+    "col": 2,
+    "lab": 2,
+    "orat": 2,
+    "understan": 2,
+    "understanding</w>": 2,
+    "softw": 2,
+    "software</w>": 2,
+    "jec": 2,
+    "reg": 2,
+    "ssi": 2,
+    "tex": 2,
+    "text</w>": 2,
+    "provi": 2,
+    "machines</w>": 2,
+    "worl": 2,
+    "adv": 2,
+    "advan": 2,
+    "advanc": 2,
+    "im": 2,
+    "impro": 2,
+    "ima": 2,
+    "image</w>": 2,
+    "tection</w>": 2,
+    "gen": 2,
+    "gener": 2,
+    "computing</w>": 2,
+    "go": 2,
+    "goo": 2,
+    "ser": 2,
+    "yed</w>": 2,
+    "made</w>": 2,
+    "ble</w>": 2,
+    "research": 2,
+    "researchers</w>": 2,
+    "stati": 2,
+    "statis": 2,
+    "statistical</w>": 2,
+    "conce": 2,
+    "prob": 2,
+    "distr": 2,
+    "distrib": 2,
+    "distribu": 2,
+    "ations</w>": 2,
+    "bi": 2,
+    "consi": 2,
+    "consider": 2,
+    "time</w>": 2,
+    "ance</w>": 2,
+    "perform": 2,
+    "ros": 2
+  },
+  "merges": {
+    "s___</w>": "s</w>",
+    "e___</w>": "e</w>",
+    "i___n": "in",
+    "a___n": "an",
+    "d___</w>": "d</w>",
+    "e___r": "er",
+    "in___g": "ing",
+    "a___t": "at",
+    "a___r": "ar",
+    "ing___</w>": "ing</w>",
+    "o___n": "on",
+    "e___n": "en",
+    "a___l": "al",
+    ",___</w>": ",</w>",
+    "t___h": "th",
+    ".___</w>": ".</w>",
+    "an___d</w>": "and</w>",
+    "o___r": "or",
+    "t___</w>": "t</w>",
+    "r___o": "ro",
+    "t___i": "ti",
+    "a___</w>": "a</w>",
+    "e___l": "el",
+    "y___</w>": "y</w>",
+    "c___h": "ch",
+    "l___e": "le",
+    "on___</w>": "on</w>",
+    "i___c": "ic",
+    "s___t": "st",
+    "al___</w>": "al</w>",
+    "o___f": "of",
+    "p___ro": "pro",
+    "t___o": "to",
+    "d___at": "dat",
+    "e___s</w>": "es</w>",
+    "r___e": "re",
+    "s___i": "si",
+    "c___e</w>": "ce</w>",
+    "m___a": "ma",
+    "th___e</w>": "the</w>",
+    "c___o": "co",
+    "dat___a</w>": "data</w>",
+    "t___er": "ter",
+    "of___</w>": "of</w>",
+    "e___d</w>": "ed</w>",
+    "to___</w>": "to</w>",
+    "m___p": "mp",
+    "f___or": "for",
+    "l___i": "li",
+    "in___</w>": "in</w>",
+    "u___l": "ul",
+    "en___ce</w>": "ence</w>",
+    "e___s": "es",
+    "u___r": "ur",
+    "le___ar": "lear",
+    "lear___n": "learn",
+    "c___on": "con",
+    "t___e": "te",
+    "at___i": "ati",
+    "i___s</w>": "is</w>",
+    "c___es": "ces",
+    "c___i": "ci",
+    "learn___ing</w>": "learning</w>",
+    "s___e": "se",
+    "r___a": "ra",
+    "a___b": "ab",
+    "g___e</w>": "ge</w>",
+    "pro___ces": "proces",
+    "m___o": "mo",
+    "ma___ch": "mach",
+    "mach___in": "machin",
+    "l___e</w>": "le</w>",
+    "t___s</w>": "ts</w>",
+    "d___e": "de",
+    "an___g": "ang",
+    "m___</w>": "m</w>",
+    "o___p": "op",
+    "s___u": "su",
+    "co___mp": "comp",
+    "an___al": "anal",
+    "anal___y": "analy",
+    "machin___e</w>": "machine</w>",
+    "mo___d": "mod",
+    "ar___e</w>": "are</w>",
+    "a___s</w>": "as</w>",
+    "i___t</w>": "it</w>",
+    "for___</w>": "for</w>",
+    "s___ing</w>": "sing</w>",
+    "f___ic": "fic",
+    "u___n": "un",
+    "l___y</w>": "ly</w>",
+    "ati___on</w>": "ation</w>",
+    "k___e</w>": "ke</w>",
+    "q___u": "qu",
+    "v___er": "ver",
+    "a___s": "as",
+    "at___ur": "atur",
+    "l___ang": "lang",
+    "lang___u": "langu",
+    "langu___a": "langua",
+    "langua___ge</w>": "language</w>",
+    "proces___sing</w>": "processing</w>",
+    "ti___c": "tic",
+    "comp___u": "compu",
+    "w___i": "wi",
+    "a___c": "ac",
+    "on___s</w>": "ons</w>",
+    "en___</w>": "en</w>",
+    "o___w": "ow",
+    "u___t</w>": "ut</w>",
+    "e___x": "ex",
+    "er___s</w>": "ers</w>",
+    "mod___el": "model",
+    "i___z": "iz",
+    "for___m": "form",
+    "li___ke</w>": "like</w>",
+    "n___i": "ni",
+    "ul___ar": "ular",
+    "i___s": "is",
+    "s___ci": "sci",
+    "in___t": "int",
+    "an___</w>": "an</w>",
+    "p___at": "pat",
+    "pat___ter": "patter",
+    "patter___n": "pattern",
+    "p___l": "pl",
+    "i___t": "it",
+    "p___</w>": "p</w>",
+    "n___e": "ne",
+    "w___or": "wor",
+    "d___er": "der",
+    "en___t</w>": "ent</w>",
+    "ch___</w>": "ch</w>",
+    "s___y": "sy",
+    "o___l": "ol",
+    "st___e": "ste",
+    "v___el": "vel",
+    "p___re": "pre",
+    "t___r": "tr",
+    "c___r": "cr",
+    "si___s</w>": "sis</w>",
+    "c___l": "cl",
+    "d___e</w>": "de</w>",
+    "d___s</w>": "ds</w>",
+    "compu___ter": "computer",
+    "sci___ence</w>": "science</w>",
+    "ar___ti": "arti",
+    "arti___fic": "artific",
+    "artific___i": "artifici",
+    "artifici___al</w>": "artificial</w>",
+    "int___el": "intel",
+    "intel___li": "intelli",
+    "intelli___g": "intellig",
+    "intellig___ence</w>": "intelligence</w>",
+    "wi___th": "with",
+    "b___e": "be",
+    "p___ar": "par",
+    "m___s</w>": "ms</w>",
+    "pattern___s</w>": "patterns</w>",
+    "k___s</w>": "ks</w>",
+    "t___ing</w>": "ting</w>",
+    "th___e": "the",
+    "h___i": "hi",
+    "a___i": "ai",
+    "sy___ste": "syste",
+    "h___a": "ha",
+    "v___e</w>": "ve</w>",
+    "tr___an": "tran",
+    "tran___s": "trans",
+    "ti___on</w>": "tion</w>",
+    "f___ul": "ful",
+    "ful___</w>": "ful</w>",
+    "analy___sis</w>": "analysis</w>",
+    "e___c": "ec",
+    "k___</w>": "k</w>",
+    "n___</w>": "n</w>",
+    "f___o": "fo",
+    "th___is</w>": "this</w>",
+    "ular___</w>": "ular</w>",
+    "n___atur": "natur",
+    "natur___al</w>": "natural</w>",
+    "f___i": "fi",
+    "in___ter": "inter",
+    "proces___s</w>": "process</w>",
+    "u___s": "us",
+    "un___der": "under",
+    "under___st": "underst",
+    "d___ing</w>": "ding</w>",
+    "ai___</w>": "ai</w>",
+    "se___ar": "sear",
+    "p___er": "per",
+    "syste___ms</w>": "systems</w>",
+    "trans___form": "transform",
+    "er___</w>": "er</w>",
+    "m___e": "me",
+    "d___i": "di",
+    "de___vel": "devel",
+    "devel___op": "develop",
+    "h___el": "hel",
+    "v___i": "vi",
+    "g___ni": "gni",
+    "i___es</w>": "ies</w>",
+    "te___ch": "tech",
+    "er___ing</w>": "ering</w>",
+    "x___</w>": "x</w>",
+    "o___ver": "over",
+    "d___o": "do",
+    "st___ing</w>": "sting</w>",
+    "su___b": "sub",
+    "fi___el": "fiel",
+    "fiel___d</w>": "field</w>",
+    "computer___</w>": "computer</w>",
+    "con___c": "conc",
+    "with___</w>": "with</w>",
+    "ti___ons</w>": "tions</w>",
+    "t___w": "tw",
+    "ow___</w>": "ow</w>",
+    "pro___g": "prog",
+    "prog___ra": "progra",
+    "analy___z": "analyz",
+    "analyz___e</w>": "analyze</w>",
+    "g___or": "gor",
+    "c___an</w>": "can</w>",
+    "f___ro": "fro",
+    "fro___m</w>": "from</w>",
+    "pl___ic": "plic",
+    "m___m": "mm",
+    "model___</w>": "model</w>",
+    "to___k": "tok",
+    "tok___en": "token",
+    "se___qu": "sequ",
+    "sequ___ence</w>": "sequence</w>",
+    "b___ut</w>": "but</w>",
+    "a___p": "ap",
+    "ti___m": "tim",
+    "re___sear": "resear",
+    "fo___c": "foc",
+    "t___ed</w>": "ted</w>",
+    "a___d": "ad",
+    "h___as</w>": "has</w>",
+    "d___u": "du",
+    "t___en": "ten",
+    "te___c": "tec",
+    "ur___e</w>": "ure</w>",
+    "v___ol": "vol",
+    "model___s</w>": "models</w>",
+    "develop___m": "developm",
+    "developm___ent</w>": "development</w>",
+    "cr___u": "cru",
+    "cru___ci": "cruci",
+    "cruci___al</w>": "crucial</w>",
+    "w___</w>": "w</w>",
+    "ab___le</w>": "able</w>",
+    "t___as": "tas",
+    "tas___ks</w>": "tasks</w>",
+    "cl___u": "clu",
+    "v___al": "val",
+    "al___iz": "aliz",
+    "le___s</w>": "les</w>",
+    "hel___p</w>": "help</w>",
+    "s___of": "sof",
+    "i___b": "ib",
+    "ha___ve</w>": "have</w>",
+    "si___gni": "signi",
+    "signi___fic": "signific",
+    "signific___an": "significan",
+    "m___en": "men",
+    "cl___o": "clo",
+    "clo___u": "clou",
+    "clou___d</w>": "cloud</w>",
+    "m___ic": "mic",
+    "st___r": "str",
+    "tech___ni": "techni",
+    "techni___qu": "techniqu",
+    "techniqu___es</w>": "techniques</w>",
+    "tic___al</w>": "tical</w>",
+    "p___o": "po",
+    "f___e": "fe",
+    "fe___atur": "featur",
+    "featur___e</w>": "feature</w>",
+    "en___g": "eng",
+    "eng___in": "engin",
+    "engin___e": "engine",
+    "engine___ering</w>": "engineering</w>",
+    "over___</w>": "over</w>",
+    "l___a": "la",
+    "g___</w>": "g</w>",
+    "con___t": "cont",
+    "in___s</w>": "ins</w>",
+    "p___h": "ph",
+    "at___</w>": "at</w>",
+    "ma___k": "mak",
+    "mak___ing</w>": "making</w>",
+    "p___op": "pop",
+    "pop___ular</w>": "popular</w>",
+    "s___en": "sen",
+    "te___sting</w>": "testing</w>",
+    "tic___s</w>": "tics</w>",
+    "computer___s</w>": "computers</w>",
+    "par___tic": "partic",
+    "h___ow</w>": "how</w>",
+    "l___ar": "lar",
+    "lar___ge</w>": "large</w>",
+    "al___gor": "algor",
+    "algor___i": "algori",
+    "algori___th": "algorith",
+    "m___at": "mat",
+    "al___ly</w>": "ally</w>",
+    "learn___</w>": "learn</w>",
+    "with___o": "witho",
+    "witho___ut</w>": "without</w>",
+    "progra___mm": "programm",
+    "de___e": "dee",
+    "dee___p</w>": "deep</w>",
+    "us___es</w>": "uses</w>",
+    "ne___ur": "neur",
+    "neur___al</w>": "neural</w>",
+    "ne___t": "net",
+    "net___wor": "networ",
+    "networ___ks</w>": "networks</w>",
+    "m___ul": "mul",
+    "mul___ti": "multi",
+    "multi___p": "multip",
+    "multip___le</w>": "multiple</w>",
+    "underst___and</w>": "understand</w>",
+    "comp___le": "comple",
+    "comple___x</w>": "complex</w>",
+    "iz___ation</w>": "ization</w>",
+    "ch___ar": "char",
+    "char___ac": "charac",
+    "charac___ter": "character",
+    "character___s</w>": "characters</w>",
+    "token___s</w>": "tokens</w>",
+    "wor___ds</w>": "words</w>",
+    "the___y</w>": "they</w>",
+    "s___o": "so",
+    "or___</w>": "or</w>",
+    "ap___plic": "applic",
+    "st___or": "stor",
+    "mod___er": "moder",
+    "moder___n</w>": "modern</w>",
+    "e___ar": "ear",
+    "ear___ly</w>": "early</w>",
+    "us___ed</w>": "used</w>",
+    "m___b": "mb",
+    "re___as": "reas",
+    "w___hi": "whi",
+    "mp___or": "mpor",
+    "ar___y</w>": "ary</w>",
+    "p___y": "py",
+    "g___h": "gh",
+    "inter___pre": "interpre",
+    "i___ts</w>": "its</w>",
+    "mp___l": "mpl",
+    "mpl___ic": "mplic",
+    "it___y</w>": "ity</w>",
+    "ab___i": "abi",
+    "abi___li": "abili",
+    "abili___t": "abilit",
+    "abilit___y</w>": "ability</w>",
+    "be___co": "beco",
+    "beco___m": "becom",
+    "el___y</w>": "ely</w>",
+    "li___b": "lib",
+    "lib___r": "libr",
+    "t___ure</w>": "ture</w>",
+    "ti___on": "tion",
+    "du___c": "duc",
+    "f___f": "ff",
+    "in___p": "inp",
+    "inp___ut</w>": "input</w>",
+    "w___h": "wh",
+    "wh___en</w>": "when</w>",
+    "le___d</w>": "led</w>",
+    "p___ow": "pow",
+    "pow___er": "power",
+    "power___ful</w>": "powerful</w>",
+    "p___t</w>": "pt</w>",
+    "pre___processing</w>": "preprocessing</w>",
+    "an___y</w>": "any</w>",
+    "i___p": "ip",
+    "in___vol": "invol",
+    "invol___v": "involv",
+    "involv___es</w>": "involves</w>",
+    "c___le": "cle",
+    "cle___an": "clean",
+    "clean___ing</w>": "cleaning</w>",
+    "transform___ing</w>": "transforming</w>",
+    "ra___w</w>": "raw</w>",
+    "an___d": "and",
+    "l___ing</w>": "ling</w>",
+    "ic___al</w>": "ical</w>",
+    "v___ar": "var",
+    "var___i": "vari",
+    "vari___ab": "variab",
+    "variab___les</w>": "variables</w>",
+    "si___on</w>": "sion</w>",
+    "l___</w>": "l</w>",
+    "g___it</w>": "git</w>",
+    "t___ra": "tra",
+    "the___i": "thei",
+    "thei___r": "their",
+    "their___</w>": "their</w>",
+    "co___l": "col",
+    "l___ab": "lab",
+    "or___at": "orat",
+    "underst___an": "understan",
+    "understan___ding</w>": "understanding</w>",
+    "sof___tw": "softw",
+    "softw___are</w>": "software</w>",
+    "j___ec": "jec",
+    "re___g": "reg",
+    "s___si": "ssi",
+    "te___x": "tex",
+    "tex___t</w>": "text</w>",
+    "pro___vi": "provi",
+    "machin___es</w>": "machines</w>",
+    "wor___l": "worl",
+    "ad___v": "adv",
+    "adv___an": "advan",
+    "advan___c": "advanc",
+    "i___m": "im",
+    "im___pro": "impro",
+    "i___ma": "ima",
+    "ima___ge</w>": "image</w>",
+    "tec___tion</w>": "tection</w>",
+    "g___en": "gen",
+    "gen___er": "gener",
+    "compu___ting</w>": "computing</w>",
+    "g___o": "go",
+    "go___o": "goo",
+    "s___er": "ser",
+    "y___ed</w>": "yed</w>",
+    "ma___de</w>": "made</w>",
+    "b___le</w>": "ble</w>",
+    "resear___ch": "research",
+    "research___ers</w>": "researchers</w>",
+    "st___ati": "stati",
+    "stati___s": "statis",
+    "statis___tical</w>": "statistical</w>",
+    "conc___e": "conce",
+    "pro___b": "prob",
+    "di___str": "distr",
+    "distr___ib": "distrib",
+    "distrib___u": "distribu",
+    "ati___ons</w>": "ations</w>",
+    "b___i": "bi",
+    "con___si": "consi",
+    "consi___der": "consider",
+    "tim___e</w>": "time</w>",
+    "an___ce</w>": "ance</w>",
+    "per___form": "perform",
+    "ro___s": "ros"
+  },
+  "merge_order": [
+    [
+      "s",
+      "</w>"
+    ],
+    [
+      "e",
+      "</w>"
+    ],
+    [
+      "i",
+      "n"
+    ],
+    [
+      "a",
+      "n"
+    ],
+    [
+      "d",
+      "</w>"
+    ],
+    [
+      "e",
+      "r"
+    ],
+    [
+      "in",
+      "g"
+    ],
+    [
+      "a",
+      "t"
+    ],
+    [
+      "a",
+      "r"
+    ],
+    [
+      "ing",
+      "</w>"
+    ],
+    [
+      "o",
+      "n"
+    ],
+    [
+      "e",
+      "n"
+    ],
+    [
+      "a",
+      "l"
+    ],
+    [
+      ",",
+      "</w>"
+    ],
+    [
+      "t",
+      "h"
+    ],
+    [
+      ".",
+      "</w>"
+    ],
+    [
+      "an",
+      "d</w>"
+    ],
+    [
+      "o",
+      "r"
+    ],
+    [
+      "t",
+      "</w>"
+    ],
+    [
+      "r",
+      "o"
+    ],
+    [
+      "t",
+      "i"
+    ],
+    [
+      "a",
+      "</w>"
+    ],
+    [
+      "e",
+      "l"
+    ],
+    [
+      "y",
+      "</w>"
+    ],
+    [
+      "c",
+      "h"
+    ],
+    [
+      "l",
+      "e"
+    ],
+    [
+      "on",
+      "</w>"
+    ],
+    [
+      "i",
+      "c"
+    ],
+    [
+      "s",
+      "t"
+    ],
+    [
+      "al",
+      "</w>"
+    ],
+    [
+      "o",
+      "f"
+    ],
+    [
+      "p",
+      "ro"
+    ],
+    [
+      "t",
+      "o"
+    ],
+    [
+      "d",
+      "at"
+    ],
+    [
+      "e",
+      "s</w>"
+    ],
+    [
+      "r",
+      "e"
+    ],
+    [
+      "s",
+      "i"
+    ],
+    [
+      "c",
+      "e</w>"
+    ],
+    [
+      "m",
+      "a"
+    ],
+    [
+      "th",
+      "e</w>"
+    ],
+    [
+      "c",
+      "o"
+    ],
+    [
+      "dat",
+      "a</w>"
+    ],
+    [
+      "t",
+      "er"
+    ],
+    [
+      "of",
+      "</w>"
+    ],
+    [
+      "e",
+      "d</w>"
+    ],
+    [
+      "to",
+      "</w>"
+    ],
+    [
+      "m",
+      "p"
+    ],
+    [
+      "f",
+      "or"
+    ],
+    [
+      "l",
+      "i"
+    ],
+    [
+      "in",
+      "</w>"
+    ],
+    [
+      "u",
+      "l"
+    ],
+    [
+      "en",
+      "ce</w>"
+    ],
+    [
+      "e",
+      "s"
+    ],
+    [
+      "u",
+      "r"
+    ],
+    [
+      "le",
+      "ar"
+    ],
+    [
+      "lear",
+      "n"
+    ],
+    [
+      "c",
+      "on"
+    ],
+    [
+      "t",
+      "e"
+    ],
+    [
+      "at",
+      "i"
+    ],
+    [
+      "i",
+      "s</w>"
+    ],
+    [
+      "c",
+      "es"
+    ],
+    [
+      "c",
+      "i"
+    ],
+    [
+      "learn",
+      "ing</w>"
+    ],
+    [
+      "s",
+      "e"
+    ],
+    [
+      "r",
+      "a"
+    ],
+    [
+      "a",
+      "b"
+    ],
+    [
+      "g",
+      "e</w>"
+    ],
+    [
+      "pro",
+      "ces"
+    ],
+    [
+      "m",
+      "o"
+    ],
+    [
+      "ma",
+      "ch"
+    ],
+    [
+      "mach",
+      "in"
+    ],
+    [
+      "l",
+      "e</w>"
+    ],
+    [
+      "t",
+      "s</w>"
+    ],
+    [
+      "d",
+      "e"
+    ],
+    [
+      "an",
+      "g"
+    ],
+    [
+      "m",
+      "</w>"
+    ],
+    [
+      "o",
+      "p"
+    ],
+    [
+      "s",
+      "u"
+    ],
+    [
+      "co",
+      "mp"
+    ],
+    [
+      "an",
+      "al"
+    ],
+    [
+      "anal",
+      "y"
+    ],
+    [
+      "machin",
+      "e</w>"
+    ],
+    [
+      "mo",
+      "d"
+    ],
+    [
+      "ar",
+      "e</w>"
+    ],
+    [
+      "a",
+      "s</w>"
+    ],
+    [
+      "i",
+      "t</w>"
+    ],
+    [
+      "for",
+      "</w>"
+    ],
+    [
+      "s",
+      "ing</w>"
+    ],
+    [
+      "f",
+      "ic"
+    ],
+    [
+      "u",
+      "n"
+    ],
+    [
+      "l",
+      "y</w>"
+    ],
+    [
+      "ati",
+      "on</w>"
+    ],
+    [
+      "k",
+      "e</w>"
+    ],
+    [
+      "q",
+      "u"
+    ],
+    [
+      "v",
+      "er"
+    ],
+    [
+      "a",
+      "s"
+    ],
+    [
+      "at",
+      "ur"
+    ],
+    [
+      "l",
+      "ang"
+    ],
+    [
+      "lang",
+      "u"
+    ],
+    [
+      "langu",
+      "a"
+    ],
+    [
+      "langua",
+      "ge</w>"
+    ],
+    [
+      "proces",
+      "sing</w>"
+    ],
+    [
+      "ti",
+      "c"
+    ],
+    [
+      "comp",
+      "u"
+    ],
+    [
+      "w",
+      "i"
+    ],
+    [
+      "a",
+      "c"
+    ],
+    [
+      "on",
+      "s</w>"
+    ],
+    [
+      "en",
+      "</w>"
+    ],
+    [
+      "o",
+      "w"
+    ],
+    [
+      "u",
+      "t</w>"
+    ],
+    [
+      "e",
+      "x"
+    ],
+    [
+      "er",
+      "s</w>"
+    ],
+    [
+      "mod",
+      "el"
+    ],
+    [
+      "i",
+      "z"
+    ],
+    [
+      "for",
+      "m"
+    ],
+    [
+      "li",
+      "ke</w>"
+    ],
+    [
+      "n",
+      "i"
+    ],
+    [
+      "ul",
+      "ar"
+    ],
+    [
+      "i",
+      "s"
+    ],
+    [
+      "s",
+      "ci"
+    ],
+    [
+      "in",
+      "t"
+    ],
+    [
+      "an",
+      "</w>"
+    ],
+    [
+      "p",
+      "at"
+    ],
+    [
+      "pat",
+      "ter"
+    ],
+    [
+      "patter",
+      "n"
+    ],
+    [
+      "p",
+      "l"
+    ],
+    [
+      "i",
+      "t"
+    ],
+    [
+      "p",
+      "</w>"
+    ],
+    [
+      "n",
+      "e"
+    ],
+    [
+      "w",
+      "or"
+    ],
+    [
+      "d",
+      "er"
+    ],
+    [
+      "en",
+      "t</w>"
+    ],
+    [
+      "ch",
+      "</w>"
+    ],
+    [
+      "s",
+      "y"
+    ],
+    [
+      "o",
+      "l"
+    ],
+    [
+      "st",
+      "e"
+    ],
+    [
+      "v",
+      "el"
+    ],
+    [
+      "p",
+      "re"
+    ],
+    [
+      "t",
+      "r"
+    ],
+    [
+      "c",
+      "r"
+    ],
+    [
+      "si",
+      "s</w>"
+    ],
+    [
+      "c",
+      "l"
+    ],
+    [
+      "d",
+      "e</w>"
+    ],
+    [
+      "d",
+      "s</w>"
+    ],
+    [
+      "compu",
+      "ter"
+    ],
+    [
+      "sci",
+      "ence</w>"
+    ],
+    [
+      "ar",
+      "ti"
+    ],
+    [
+      "arti",
+      "fic"
+    ],
+    [
+      "artific",
+      "i"
+    ],
+    [
+      "artifici",
+      "al</w>"
+    ],
+    [
+      "int",
+      "el"
+    ],
+    [
+      "intel",
+      "li"
+    ],
+    [
+      "intelli",
+      "g"
+    ],
+    [
+      "intellig",
+      "ence</w>"
+    ],
+    [
+      "wi",
+      "th"
+    ],
+    [
+      "b",
+      "e"
+    ],
+    [
+      "p",
+      "ar"
+    ],
+    [
+      "m",
+      "s</w>"
+    ],
+    [
+      "pattern",
+      "s</w>"
+    ],
+    [
+      "k",
+      "s</w>"
+    ],
+    [
+      "t",
+      "ing</w>"
+    ],
+    [
+      "th",
+      "e"
+    ],
+    [
+      "h",
+      "i"
+    ],
+    [
+      "a",
+      "i"
+    ],
+    [
+      "sy",
+      "ste"
+    ],
+    [
+      "h",
+      "a"
+    ],
+    [
+      "v",
+      "e</w>"
+    ],
+    [
+      "tr",
+      "an"
+    ],
+    [
+      "tran",
+      "s"
+    ],
+    [
+      "ti",
+      "on</w>"
+    ],
+    [
+      "f",
+      "ul"
+    ],
+    [
+      "ful",
+      "</w>"
+    ],
+    [
+      "analy",
+      "sis</w>"
+    ],
+    [
+      "e",
+      "c"
+    ],
+    [
+      "k",
+      "</w>"
+    ],
+    [
+      "n",
+      "</w>"
+    ],
+    [
+      "f",
+      "o"
+    ],
+    [
+      "th",
+      "is</w>"
+    ],
+    [
+      "ular",
+      "</w>"
+    ],
+    [
+      "n",
+      "atur"
+    ],
+    [
+      "natur",
+      "al</w>"
+    ],
+    [
+      "f",
+      "i"
+    ],
+    [
+      "in",
+      "ter"
+    ],
+    [
+      "proces",
+      "s</w>"
+    ],
+    [
+      "u",
+      "s"
+    ],
+    [
+      "un",
+      "der"
+    ],
+    [
+      "under",
+      "st"
+    ],
+    [
+      "d",
+      "ing</w>"
+    ],
+    [
+      "ai",
+      "</w>"
+    ],
+    [
+      "se",
+      "ar"
+    ],
+    [
+      "p",
+      "er"
+    ],
+    [
+      "syste",
+      "ms</w>"
+    ],
+    [
+      "trans",
+      "form"
+    ],
+    [
+      "er",
+      "</w>"
+    ],
+    [
+      "m",
+      "e"
+    ],
+    [
+      "d",
+      "i"
+    ],
+    [
+      "de",
+      "vel"
+    ],
+    [
+      "devel",
+      "op"
+    ],
+    [
+      "h",
+      "el"
+    ],
+    [
+      "v",
+      "i"
+    ],
+    [
+      "g",
+      "ni"
+    ],
+    [
+      "i",
+      "es</w>"
+    ],
+    [
+      "te",
+      "ch"
+    ],
+    [
+      "er",
+      "ing</w>"
+    ],
+    [
+      "x",
+      "</w>"
+    ],
+    [
+      "o",
+      "ver"
+    ],
+    [
+      "d",
+      "o"
+    ],
+    [
+      "st",
+      "ing</w>"
+    ],
+    [
+      "su",
+      "b"
+    ],
+    [
+      "fi",
+      "el"
+    ],
+    [
+      "fiel",
+      "d</w>"
+    ],
+    [
+      "computer",
+      "</w>"
+    ],
+    [
+      "con",
+      "c"
+    ],
+    [
+      "with",
+      "</w>"
+    ],
+    [
+      "ti",
+      "ons</w>"
+    ],
+    [
+      "t",
+      "w"
+    ],
+    [
+      "ow",
+      "</w>"
+    ],
+    [
+      "pro",
+      "g"
+    ],
+    [
+      "prog",
+      "ra"
+    ],
+    [
+      "analy",
+      "z"
+    ],
+    [
+      "analyz",
+      "e</w>"
+    ],
+    [
+      "g",
+      "or"
+    ],
+    [
+      "c",
+      "an</w>"
+    ],
+    [
+      "f",
+      "ro"
+    ],
+    [
+      "fro",
+      "m</w>"
+    ],
+    [
+      "pl",
+      "ic"
+    ],
+    [
+      "m",
+      "m"
+    ],
+    [
+      "model",
+      "</w>"
+    ],
+    [
+      "to",
+      "k"
+    ],
+    [
+      "tok",
+      "en"
+    ],
+    [
+      "se",
+      "qu"
+    ],
+    [
+      "sequ",
+      "ence</w>"
+    ],
+    [
+      "b",
+      "ut</w>"
+    ],
+    [
+      "a",
+      "p"
+    ],
+    [
+      "ti",
+      "m"
+    ],
+    [
+      "re",
+      "sear"
+    ],
+    [
+      "fo",
+      "c"
+    ],
+    [
+      "t",
+      "ed</w>"
+    ],
+    [
+      "a",
+      "d"
+    ],
+    [
+      "h",
+      "as</w>"
+    ],
+    [
+      "d",
+      "u"
+    ],
+    [
+      "t",
+      "en"
+    ],
+    [
+      "te",
+      "c"
+    ],
+    [
+      "ur",
+      "e</w>"
+    ],
+    [
+      "v",
+      "ol"
+    ],
+    [
+      "model",
+      "s</w>"
+    ],
+    [
+      "develop",
+      "m"
+    ],
+    [
+      "developm",
+      "ent</w>"
+    ],
+    [
+      "cr",
+      "u"
+    ],
+    [
+      "cru",
+      "ci"
+    ],
+    [
+      "cruci",
+      "al</w>"
+    ],
+    [
+      "w",
+      "</w>"
+    ],
+    [
+      "ab",
+      "le</w>"
+    ],
+    [
+      "t",
+      "as"
+    ],
+    [
+      "tas",
+      "ks</w>"
+    ],
+    [
+      "cl",
+      "u"
+    ],
+    [
+      "v",
+      "al"
+    ],
+    [
+      "al",
+      "iz"
+    ],
+    [
+      "le",
+      "s</w>"
+    ],
+    [
+      "hel",
+      "p</w>"
+    ],
+    [
+      "s",
+      "of"
+    ],
+    [
+      "i",
+      "b"
+    ],
+    [
+      "ha",
+      "ve</w>"
+    ],
+    [
+      "si",
+      "gni"
+    ],
+    [
+      "signi",
+      "fic"
+    ],
+    [
+      "signific",
+      "an"
+    ],
+    [
+      "m",
+      "en"
+    ],
+    [
+      "cl",
+      "o"
+    ],
+    [
+      "clo",
+      "u"
+    ],
+    [
+      "clou",
+      "d</w>"
+    ],
+    [
+      "m",
+      "ic"
+    ],
+    [
+      "st",
+      "r"
+    ],
+    [
+      "tech",
+      "ni"
+    ],
+    [
+      "techni",
+      "qu"
+    ],
+    [
+      "techniqu",
+      "es</w>"
+    ],
+    [
+      "tic",
+      "al</w>"
+    ],
+    [
+      "p",
+      "o"
+    ],
+    [
+      "f",
+      "e"
+    ],
+    [
+      "fe",
+      "atur"
+    ],
+    [
+      "featur",
+      "e</w>"
+    ],
+    [
+      "en",
+      "g"
+    ],
+    [
+      "eng",
+      "in"
+    ],
+    [
+      "engin",
+      "e"
+    ],
+    [
+      "engine",
+      "ering</w>"
+    ],
+    [
+      "over",
+      "</w>"
+    ],
+    [
+      "l",
+      "a"
+    ],
+    [
+      "g",
+      "</w>"
+    ],
+    [
+      "con",
+      "t"
+    ],
+    [
+      "in",
+      "s</w>"
+    ],
+    [
+      "p",
+      "h"
+    ],
+    [
+      "at",
+      "</w>"
+    ],
+    [
+      "ma",
+      "k"
+    ],
+    [
+      "mak",
+      "ing</w>"
+    ],
+    [
+      "p",
+      "op"
+    ],
+    [
+      "pop",
+      "ular</w>"
+    ],
+    [
+      "s",
+      "en"
+    ],
+    [
+      "te",
+      "sting</w>"
+    ],
+    [
+      "tic",
+      "s</w>"
+    ],
+    [
+      "computer",
+      "s</w>"
+    ],
+    [
+      "par",
+      "tic"
+    ],
+    [
+      "h",
+      "ow</w>"
+    ],
+    [
+      "l",
+      "ar"
+    ],
+    [
+      "lar",
+      "ge</w>"
+    ],
+    [
+      "al",
+      "gor"
+    ],
+    [
+      "algor",
+      "i"
+    ],
+    [
+      "algori",
+      "th"
+    ],
+    [
+      "m",
+      "at"
+    ],
+    [
+      "al",
+      "ly</w>"
+    ],
+    [
+      "learn",
+      "</w>"
+    ],
+    [
+      "with",
+      "o"
+    ],
+    [
+      "witho",
+      "ut</w>"
+    ],
+    [
+      "progra",
+      "mm"
+    ],
+    [
+      "de",
+      "e"
+    ],
+    [
+      "dee",
+      "p</w>"
+    ],
+    [
+      "us",
+      "es</w>"
+    ],
+    [
+      "ne",
+      "ur"
+    ],
+    [
+      "neur",
+      "al</w>"
+    ],
+    [
+      "ne",
+      "t"
+    ],
+    [
+      "net",
+      "wor"
+    ],
+    [
+      "networ",
+      "ks</w>"
+    ],
+    [
+      "m",
+      "ul"
+    ],
+    [
+      "mul",
+      "ti"
+    ],
+    [
+      "multi",
+      "p"
+    ],
+    [
+      "multip",
+      "le</w>"
+    ],
+    [
+      "underst",
+      "and</w>"
+    ],
+    [
+      "comp",
+      "le"
+    ],
+    [
+      "comple",
+      "x</w>"
+    ],
+    [
+      "iz",
+      "ation</w>"
+    ],
+    [
+      "ch",
+      "ar"
+    ],
+    [
+      "char",
+      "ac"
+    ],
+    [
+      "charac",
+      "ter"
+    ],
+    [
+      "character",
+      "s</w>"
+    ],
+    [
+      "token",
+      "s</w>"
+    ],
+    [
+      "wor",
+      "ds</w>"
+    ],
+    [
+      "the",
+      "y</w>"
+    ],
+    [
+      "s",
+      "o"
+    ],
+    [
+      "or",
+      "</w>"
+    ],
+    [
+      "ap",
+      "plic"
+    ],
+    [
+      "st",
+      "or"
+    ],
+    [
+      "mod",
+      "er"
+    ],
+    [
+      "moder",
+      "n</w>"
+    ],
+    [
+      "e",
+      "ar"
+    ],
+    [
+      "ear",
+      "ly</w>"
+    ],
+    [
+      "us",
+      "ed</w>"
+    ],
+    [
+      "m",
+      "b"
+    ],
+    [
+      "re",
+      "as"
+    ],
+    [
+      "w",
+      "hi"
+    ],
+    [
+      "mp",
+      "or"
+    ],
+    [
+      "ar",
+      "y</w>"
+    ],
+    [
+      "p",
+      "y"
+    ],
+    [
+      "g",
+      "h"
+    ],
+    [
+      "inter",
+      "pre"
+    ],
+    [
+      "i",
+      "ts</w>"
+    ],
+    [
+      "mp",
+      "l"
+    ],
+    [
+      "mpl",
+      "ic"
+    ],
+    [
+      "it",
+      "y</w>"
+    ],
+    [
+      "ab",
+      "i"
+    ],
+    [
+      "abi",
+      "li"
+    ],
+    [
+      "abili",
+      "t"
+    ],
+    [
+      "abilit",
+      "y</w>"
+    ],
+    [
+      "be",
+      "co"
+    ],
+    [
+      "beco",
+      "m"
+    ],
+    [
+      "el",
+      "y</w>"
+    ],
+    [
+      "li",
+      "b"
+    ],
+    [
+      "lib",
+      "r"
+    ],
+    [
+      "t",
+      "ure</w>"
+    ],
+    [
+      "ti",
+      "on"
+    ],
+    [
+      "du",
+      "c"
+    ],
+    [
+      "f",
+      "f"
+    ],
+    [
+      "in",
+      "p"
+    ],
+    [
+      "inp",
+      "ut</w>"
+    ],
+    [
+      "w",
+      "h"
+    ],
+    [
+      "wh",
+      "en</w>"
+    ],
+    [
+      "le",
+      "d</w>"
+    ],
+    [
+      "p",
+      "ow"
+    ],
+    [
+      "pow",
+      "er"
+    ],
+    [
+      "power",
+      "ful</w>"
+    ],
+    [
+      "p",
+      "t</w>"
+    ],
+    [
+      "pre",
+      "processing</w>"
+    ],
+    [
+      "an",
+      "y</w>"
+    ],
+    [
+      "i",
+      "p"
+    ],
+    [
+      "in",
+      "vol"
+    ],
+    [
+      "invol",
+      "v"
+    ],
+    [
+      "involv",
+      "es</w>"
+    ],
+    [
+      "c",
+      "le"
+    ],
+    [
+      "cle",
+      "an"
+    ],
+    [
+      "clean",
+      "ing</w>"
+    ],
+    [
+      "transform",
+      "ing</w>"
+    ],
+    [
+      "ra",
+      "w</w>"
+    ],
+    [
+      "an",
+      "d"
+    ],
+    [
+      "l",
+      "ing</w>"
+    ],
+    [
+      "ic",
+      "al</w>"
+    ],
+    [
+      "v",
+      "ar"
+    ],
+    [
+      "var",
+      "i"
+    ],
+    [
+      "vari",
+      "ab"
+    ],
+    [
+      "variab",
+      "les</w>"
+    ],
+    [
+      "si",
+      "on</w>"
+    ],
+    [
+      "l",
+      "</w>"
+    ],
+    [
+      "g",
+      "it</w>"
+    ],
+    [
+      "t",
+      "ra"
+    ],
+    [
+      "the",
+      "i"
+    ],
+    [
+      "thei",
+      "r"
+    ],
+    [
+      "their",
+      "</w>"
+    ],
+    [
+      "co",
+      "l"
+    ],
+    [
+      "l",
+      "ab"
+    ],
+    [
+      "or",
+      "at"
+    ],
+    [
+      "underst",
+      "an"
+    ],
+    [
+      "understan",
+      "ding</w>"
+    ],
+    [
+      "sof",
+      "tw"
+    ],
+    [
+      "softw",
+      "are</w>"
+    ],
+    [
+      "j",
+      "ec"
+    ],
+    [
+      "re",
+      "g"
+    ],
+    [
+      "s",
+      "si"
+    ],
+    [
+      "te",
+      "x"
+    ],
+    [
+      "tex",
+      "t</w>"
+    ],
+    [
+      "pro",
+      "vi"
+    ],
+    [
+      "machin",
+      "es</w>"
+    ],
+    [
+      "wor",
+      "l"
+    ],
+    [
+      "ad",
+      "v"
+    ],
+    [
+      "adv",
+      "an"
+    ],
+    [
+      "advan",
+      "c"
+    ],
+    [
+      "i",
+      "m"
+    ],
+    [
+      "im",
+      "pro"
+    ],
+    [
+      "i",
+      "ma"
+    ],
+    [
+      "ima",
+      "ge</w>"
+    ],
+    [
+      "tec",
+      "tion</w>"
+    ],
+    [
+      "g",
+      "en"
+    ],
+    [
+      "gen",
+      "er"
+    ],
+    [
+      "compu",
+      "ting</w>"
+    ],
+    [
+      "g",
+      "o"
+    ],
+    [
+      "go",
+      "o"
+    ],
+    [
+      "s",
+      "er"
+    ],
+    [
+      "y",
+      "ed</w>"
+    ],
+    [
+      "ma",
+      "de</w>"
+    ],
+    [
+      "b",
+      "le</w>"
+    ],
+    [
+      "resear",
+      "ch"
+    ],
+    [
+      "research",
+      "ers</w>"
+    ],
+    [
+      "st",
+      "ati"
+    ],
+    [
+      "stati",
+      "s"
+    ],
+    [
+      "statis",
+      "tical</w>"
+    ],
+    [
+      "conc",
+      "e"
+    ],
+    [
+      "pro",
+      "b"
+    ],
+    [
+      "di",
+      "str"
+    ],
+    [
+      "distr",
+      "ib"
+    ],
+    [
+      "distrib",
+      "u"
+    ],
+    [
+      "ati",
+      "ons</w>"
+    ],
+    [
+      "b",
+      "i"
+    ],
+    [
+      "con",
+      "si"
+    ],
+    [
+      "consi",
+      "der"
+    ],
+    [
+      "tim",
+      "e</w>"
+    ],
+    [
+      "an",
+      "ce</w>"
+    ],
+    [
+      "per",
+      "form"
+    ],
+    [
+      "ro",
+      "s"
+    ]
+  ],
+  "trained": true,
+  "tokenizer_type": "BPETokenizer"
+}
